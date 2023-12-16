@@ -1,0 +1,2843 @@
+{
+    "thing_type": "COMPARISON",
+    "thing_key": "R839000",
+    "config": {
+        "contributions": [
+            "R837079",
+            "R837784",
+            "R837785",
+            "R837032"
+        ],
+        "predicates": [],
+        "type": "PATH",
+        "transpose": false
+    },
+    "data": {
+        "contributions": [
+            {
+                "id": "R837079",
+                "label": "Observation 1",
+                "paper_id": "R837077",
+                "paper_label": "Air pollution in Ontario, Canada during the COVID-19 State of Emergency (TEST)",
+                "paper_year": 2020,
+                "active": true
+            },
+            {
+                "id": "R837784",
+                "label": "Keleng Keleng",
+                "paper_id": "R837008",
+                "paper_label": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+                "paper_year": 2007,
+                "active": true
+            },
+            {
+                "id": "R837785",
+                "label": "Kpem(cassava leaves)",
+                "paper_id": "R837008",
+                "paper_label": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+                "paper_year": 2007,
+                "active": true
+            },
+            {
+                "id": "R837032",
+                "label": "Sanga",
+                "paper_id": "R837008",
+                "paper_label": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+                "paper_year": 2007,
+                "active": true
+            }
+        ],
+        "predicates": [
+            {
+                "id": "calcium ",
+                "label": "calcium ",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "carbohydrates",
+                "label": "carbohydrates",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "cholesterol",
+                "label": "cholesterol",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "energy",
+                "label": "energy",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "fat",
+                "label": "fat",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "iron",
+                "label": "iron",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "magnesium",
+                "label": "magnesium",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "manganese",
+                "label": "manganese",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "monounsaturated fat",
+                "label": "monounsaturated fat",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "niacin",
+                "label": "niacin",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "omega-3 fatty acid",
+                "label": "omega-3 fatty acid",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "omega-6 fatty acid",
+                "label": "omega-6 fatty acid",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "phosphorus",
+                "label": "phosphorus",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "polyunsaturated fat",
+                "label": "polyunsaturated fat",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "potassium ",
+                "label": "potassium ",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "protein",
+                "label": "protein",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "riboflavin",
+                "label": "riboflavin",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "saturated fat",
+                "label": "saturated fat",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "selenium",
+                "label": "selenium",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "sodium",
+                "label": "sodium",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "thiamin",
+                "label": "thiamin",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "total dietary fiber",
+                "label": "total dietary fiber",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "total folate",
+                "label": "total folate",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "vitamin a ( retinol equivalent)",
+                "label": "vitamin a ( retinol equivalent)",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "vitamin b-6 ",
+                "label": "vitamin b-6 ",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "vitamin c ",
+                "label": "vitamin c ",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "vitamin k ",
+                "label": "vitamin k ",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "water",
+                "label": "water",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "zinc ",
+                "label": "zinc ",
+                "n_contributions": 2,
+                "active": true,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "has observations",
+                "label": "has observations",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "has observations/no2/has feature of interest",
+                "label": "has observations/no2/has feature of interest",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has feature of interest"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result",
+                "label": "has observations/no2/has result",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has result"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has lockdown value",
+                "label": "has observations/no2/has result/result/has lockdown value",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has lockdown value"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:numericvalue",
+                "label": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:numericvalue",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:numericValue"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit",
+                "label": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:unit"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit/microgm-per-m3/altlabel",
+                "label": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit/microgm-per-m3/altlabel",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "altLabel"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit/microgm-per-m3/same as",
+                "label": "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit/microgm-per-m3/same as",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "same as"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has reference value",
+                "label": "has observations/no2/has result/result/has reference value",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has reference value"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:numericvalue",
+                "label": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:numericvalue",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:numericValue"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit",
+                "label": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:unit"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit/microgm-per-m3/altlabel",
+                "label": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit/microgm-per-m3/altlabel",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "altLabel"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit/microgm-per-m3/same as",
+                "label": "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit/microgm-per-m3/same as",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "same as"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has relative change",
+                "label": "has observations/no2/has result/result/has relative change",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has relative change"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:numericvalue",
+                "label": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:numericvalue",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:numericValue"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit",
+                "label": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:unit"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit/percent/qudt:ucumcode",
+                "label": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit/percent/qudt:ucumcode",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "qudt:ucumCode"
+                ]
+            },
+            {
+                "id": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit/percent/same as",
+                "label": "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit/percent/same as",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "same as"
+                ]
+            },
+            {
+                "id": "has observations/no2/made by sensor",
+                "label": "has observations/no2/made by sensor",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "made by sensor"
+                ]
+            },
+            {
+                "id": "has observations/no2/observed property",
+                "label": "has observations/no2/observed property",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "observed property"
+                ]
+            },
+            {
+                "id": "has observations/no2/observed property/ mole concentration/has definition",
+                "label": "has observations/no2/observed property/ mole concentration/has definition",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "Has definition"
+                ]
+            },
+            {
+                "id": "has observations/no2/used procedure",
+                "label": "has observations/no2/used procedure",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "used procedure"
+                ]
+            },
+            {
+                "id": "has observations/no2/was originated by",
+                "label": "has observations/no2/was originated by",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "was originated by"
+                ]
+            },
+            {
+                "id": "has time",
+                "label": "has time",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "has time/2023-12-03 - 2023-12-03/has beginning",
+                "label": "has time/2023-12-03 - 2023-12-03/has beginning",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has beginning"
+                ]
+            },
+            {
+                "id": "has time/2023-12-03 - 2023-12-03/has end",
+                "label": "has time/2023-12-03 - 2023-12-03/has end",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "has end"
+                ]
+            },
+            {
+                "id": "measurement platform",
+                "label": "measurement platform",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "method",
+                "label": "method",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "occurs in",
+                "label": "occurs in",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": []
+            },
+            {
+                "id": "occurs in/montreal/same as",
+                "label": "occurs in/montreal/same as",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": [
+                    "same as"
+                ]
+            },
+            {
+                "id": "stringencyindex",
+                "label": "stringencyindex",
+                "n_contributions": 1,
+                "active": false,
+                "similar_predicates": [],
+                "similar": []
+            }
+        ],
+        "data": {
+            "calcium ": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270471",
+                        "label": "60.4",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107044"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Calcium "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270500",
+                        "label": "69.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107044"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Calcium "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "carbohydrates": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270454",
+                        "label": "3.2",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107027"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Carbohydrates"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270483",
+                        "label": "2.3",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107027"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Carbohydrates"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "cholesterol": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270461",
+                        "label": "0.2",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107034"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Cholesterol"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270490",
+                        "label": "0",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107034"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Cholesterol"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "energy": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270451",
+                        "label": "637",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107024"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Energy"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270480",
+                        "label": "643",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107024"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Energy"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "fat": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270455",
+                        "label": "13.9",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107028"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270484",
+                        "label": "15.5",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107028"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "iron": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270472",
+                        "label": "1.1",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107045"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Iron"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270501",
+                        "label": "1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107045"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Iron"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "magnesium": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270474",
+                        "label": "39.5",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107047"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Magnesium"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270503",
+                        "label": "32.9",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107047"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Magnesium"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "manganese": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270475",
+                        "label": "0.5",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107048"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Manganese"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270504",
+                        "label": "0.4",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107048"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Manganese"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "monounsaturated fat": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270457",
+                        "label": "5.8",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107030"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Monounsaturated fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270486",
+                        "label": "6",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107030"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Monounsaturated fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "niacin": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270465",
+                        "label": "1.6",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107038"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Niacin"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270494",
+                        "label": "0.9",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107038"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Niacin"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "omega-3 fatty acid": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270459",
+                        "label": "0",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107032"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Omega-3 fatty acid"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270488",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107032"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Omega-3 fatty acid"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "omega-6 fatty acid": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270460",
+                        "label": "2.5",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107033"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Omega-6 fatty acid"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270489",
+                        "label": "2",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107033"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Omega-6 fatty acid"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "phosphorus": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270477",
+                        "label": "88.2",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107050"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Phosphorus"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270506",
+                        "label": "51.3",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107050"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Phosphorus"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "polyunsaturated fat": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270458",
+                        "label": "2.7",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107031"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Polyunsaturated fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270487",
+                        "label": "2.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107031"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Polyunsaturated fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "potassium ": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270478",
+                        "label": "298",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107051"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Potassium "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270507",
+                        "label": "269",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107051"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Potassium "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "protein": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270453",
+                        "label": "5.7",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107026"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Protein"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270482",
+                        "label": "3",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107026"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Protein"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "riboflavin": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270464",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107037"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Riboflavin"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270493",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107037"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Riboflavin"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "saturated fat": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270456",
+                        "label": "4.7",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107029"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Saturated fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270485",
+                        "label": "6.6",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107029"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Saturated fat"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "selenium": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270476",
+                        "label": "1.2",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107049"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Selenium"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270505",
+                        "label": "0.8",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107049"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Selenium"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "sodium": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270479",
+                        "label": "32.6",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107052"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Sodium"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270508",
+                        "label": "26.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107052"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Sodium"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "stringencyindex": [
+                [
+                    {
+                        "id": "L1270099",
+                        "label": "48.85",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P66000"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "StringencyIndex"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "thiamin": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270463",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107036"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Thiamin"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270492",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107036"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Thiamin"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "total dietary fiber": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270462",
+                        "label": "1.4",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107035"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Total dietary fiber"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270491",
+                        "label": "0.9",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107035"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Total dietary fiber"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "total folate": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270467",
+                        "label": "59.4",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107040"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Total folate"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270496",
+                        "label": "55",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107040"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Total folate"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "vitamin a ( retinol equivalent)": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270469",
+                        "label": "73.1",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107042"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Vitamin A ( retinol equivalent)"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270498",
+                        "label": "101",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107042"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Vitamin A ( retinol equivalent)"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "vitamin b-6 ": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270466",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107039"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Vitamin B-6 "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270495",
+                        "label": "0.1",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107039"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Vitamin B-6 "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "vitamin c ": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270468",
+                        "label": "12.8",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107041"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Vitamin C "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270497",
+                        "label": "16.5",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107041"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Vitamin C "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "vitamin k ": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270470",
+                        "label": "195",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107043"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Vitamin K "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270499",
+                        "label": "269",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107043"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Vitamin K "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "water": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270452",
+                        "label": "78.7",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107025"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Water"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270481",
+                        "label": "84.9",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107025"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Water"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "zinc ": [
+                [
+                    {}
+                ],
+                [
+                    {
+                        "id": "L1270473",
+                        "label": "0.6",
+                        "classes": [],
+                        "path": [
+                            "R837784",
+                            "P107046"
+                        ],
+                        "path_labels": [
+                            "Keleng Keleng",
+                            "Zinc "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {
+                        "id": "L1270502",
+                        "label": "0.4",
+                        "classes": [],
+                        "path": [
+                            "R837785",
+                            "P107046"
+                        ],
+                        "path_labels": [
+                            "Kpem(cassava leaves)",
+                            "Zinc "
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations": [
+                [
+                    {
+                        "id": "R837080",
+                        "label": "NO2",
+                        "classes": [
+                            "C67000"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has feature of interest": [
+                [
+                    {
+                        "id": "R140501",
+                        "label": "Nitrogen dioxide",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasFeatureOfInterest"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has feature of interest"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result": [
+                [
+                    {
+                        "id": "R837084",
+                        "label": "result",
+                        "classes": [
+                            "C67001"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has lockdown value": [
+                [
+                    {
+                        "id": "R837085",
+                        "label": "9.4 MicroGM-PER-M3",
+                        "classes": [
+                            "C23008"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107000"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has lockdown value"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:numericvalue": [
+                [
+                    {
+                        "id": "L1270101",
+                        "label": "9.4",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107000",
+                            "R837085",
+                            "P45075"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has lockdown value",
+                            "9.4 MicroGM-PER-M3",
+                            "qudt:numericValue"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit": [
+                [
+                    {
+                        "id": "R837006",
+                        "label": "MicroGM-PER-M3",
+                        "classes": [
+                            "C23009"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107000",
+                            "R837085",
+                            "P45076"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has lockdown value",
+                            "9.4 MicroGM-PER-M3",
+                            "qudt:unit"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit/microgm-per-m3/altlabel": [
+                [
+                    {
+                        "id": "L1270013",
+                        "label": "Microgram Per Cubic Metre",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107000",
+                            "R837085",
+                            "P45076",
+                            "R837006",
+                            "P60041"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has lockdown value",
+                            "9.4 MicroGM-PER-M3",
+                            "qudt:unit",
+                            "MicroGM-PER-M3",
+                            "altLabel"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has lockdown value/9.4 microgm-per-m3/qudt:unit/microgm-per-m3/same as": [
+                [
+                    {
+                        "id": "L1270012",
+                        "label": "https://qudt.org/vocab/unit/MicroGM-PER-M3",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107000",
+                            "R837085",
+                            "P45076",
+                            "R837006",
+                            "SAME_AS"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has lockdown value",
+                            "9.4 MicroGM-PER-M3",
+                            "qudt:unit",
+                            "MicroGM-PER-M3",
+                            "same as"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has reference value": [
+                [
+                    {
+                        "id": "R837086",
+                        "label": "16.92 MicroGM-PER-M3",
+                        "classes": [
+                            "C23008"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107001"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has reference value"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:numericvalue": [
+                [
+                    {
+                        "id": "L1270102",
+                        "label": "16.92",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107001",
+                            "R837086",
+                            "P45075"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has reference value",
+                            "16.92 MicroGM-PER-M3",
+                            "qudt:numericValue"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit": [
+                [
+                    {
+                        "id": "R837006",
+                        "label": "MicroGM-PER-M3",
+                        "classes": [
+                            "C23009"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107001",
+                            "R837086",
+                            "P45076"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has reference value",
+                            "16.92 MicroGM-PER-M3",
+                            "qudt:unit"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit/microgm-per-m3/altlabel": [
+                [
+                    {
+                        "id": "L1270013",
+                        "label": "Microgram Per Cubic Metre",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107001",
+                            "R837086",
+                            "P45076",
+                            "R837006",
+                            "P60041"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has reference value",
+                            "16.92 MicroGM-PER-M3",
+                            "qudt:unit",
+                            "MicroGM-PER-M3",
+                            "altLabel"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has reference value/16.92 microgm-per-m3/qudt:unit/microgm-per-m3/same as": [
+                [
+                    {
+                        "id": "L1270012",
+                        "label": "https://qudt.org/vocab/unit/MicroGM-PER-M3",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P107001",
+                            "R837086",
+                            "P45076",
+                            "R837006",
+                            "SAME_AS"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has reference value",
+                            "16.92 MicroGM-PER-M3",
+                            "qudt:unit",
+                            "MicroGM-PER-M3",
+                            "same as"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has relative change": [
+                [
+                    {
+                        "id": "R837087",
+                        "label": "48.85 Percent",
+                        "classes": [
+                            "C23008"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P86003"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has relative change"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has relative change/48.85 percent/qudt:numericvalue": [
+                [
+                    {
+                        "id": "L1270103",
+                        "label": "48.85",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P86003",
+                            "R837087",
+                            "P45075"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has relative change",
+                            "48.85 Percent",
+                            "qudt:numericValue"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit": [
+                [
+                    {
+                        "id": "R48045",
+                        "label": "Percent",
+                        "classes": [
+                            "C7000",
+                            "C23009"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P86003",
+                            "R837087",
+                            "P45076"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has relative change",
+                            "48.85 Percent",
+                            "qudt:unit"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit/percent/qudt:ucumcode": [
+                [
+                    {
+                        "id": "L1270015",
+                        "label": "%",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P86003",
+                            "R837087",
+                            "P45076",
+                            "R48045",
+                            "P45081"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has relative change",
+                            "48.85 Percent",
+                            "qudt:unit",
+                            "Percent",
+                            "qudt:ucumCode"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/has result/result/has relative change/48.85 percent/qudt:unit/percent/same as": [
+                [
+                    {
+                        "id": "L1270014",
+                        "label": "https://qudt.org/vocab/unit/PERCENT",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:hasResult",
+                            "R837084",
+                            "P86003",
+                            "R837087",
+                            "P45076",
+                            "R48045",
+                            "SAME_AS"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "has result",
+                            "result",
+                            "has relative change",
+                            "48.85 Percent",
+                            "qudt:unit",
+                            "Percent",
+                            "same as"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/made by sensor": [
+                [
+                    {
+                        "id": "R837081",
+                        "label": "None",
+                        "classes": [
+                            "C67004"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:madeBySensor"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "made by sensor"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/observed property": [
+                [
+                    {
+                        "id": "R147322",
+                        "label": " Mole concentration",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:observedProperty"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "observed property"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/observed property/ mole concentration/has definition": [
+                [
+                    {
+                        "id": "L411319",
+                        "label": "Molar concentration is a measure of the concentration of a chemical species, in particular of a solute in a solution, in terms of amount of substance per unit volume of solution.",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:observedProperty",
+                            "R147322",
+                            "P24009"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "observed property",
+                            " Mole concentration",
+                            "Has definition"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/used procedure": [
+                [
+                    {
+                        "id": "R837083",
+                        "label": "None",
+                        "classes": [
+                            "C67005"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "sosa:usedProcedure"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "used procedure"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has observations/no2/was originated by": [
+                [
+                    {
+                        "id": "R837082",
+                        "label": "None",
+                        "classes": [
+                            "C67006"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P7085",
+                            "R837080",
+                            "SSN:wasOriginatedBy"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has observations",
+                            "NO2",
+                            "was originated by"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has time": [
+                [
+                    {
+                        "id": "R837088",
+                        "label": "2023-12-03 - 2023-12-03",
+                        "classes": [
+                            "C2005"
+                        ],
+                        "path": [
+                            "R837079",
+                            "P43102"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has time"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has time/2023-12-03 - 2023-12-03/has beginning": [
+                [
+                    {
+                        "id": "L1270106",
+                        "label": "2023-12-03",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P43102",
+                            "R837088",
+                            "P15699"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has time",
+                            "2023-12-03 - 2023-12-03",
+                            "has beginning"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "has time/2023-12-03 - 2023-12-03/has end": [
+                [
+                    {
+                        "id": "L1270105",
+                        "label": "2023-12-03",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P43102",
+                            "R837088",
+                            "P15700"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "has time",
+                            "2023-12-03 - 2023-12-03",
+                            "has end"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "measurement platform": [
+                [
+                    {
+                        "id": "L1270100",
+                        "label": "Ground-based",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P83001"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "measurement platform"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "method": [
+                [
+                    {
+                        "id": "L1270104",
+                        "label": "Accounting for Effects of Meteorology, Atmospheric Chemistry, and Long-term Trends",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "P1005"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "method"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "occurs in": [
+                [
+                    {
+                        "id": "wikidata:Q16",
+                        "label": "Montreal",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "OCCURS_IN"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "occurs in"
+                        ],
+                        "_class": "resource"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ],
+            "occurs in/montreal/same as": [
+                [
+                    {
+                        "id": "L923221",
+                        "label": "https://www.wikidata.org/entity/Q16",
+                        "classes": [],
+                        "path": [
+                            "R837079",
+                            "OCCURS_IN",
+                            "wikidata:Q16",
+                            "SAME_AS"
+                        ],
+                        "path_labels": [
+                            "Observation 1",
+                            "occurs in",
+                            "Montreal",
+                            "same as"
+                        ],
+                        "_class": "literal"
+                    }
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ],
+                [
+                    {}
+                ]
+            ]
+        }
+    }
+}
