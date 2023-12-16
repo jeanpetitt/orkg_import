@@ -1,6 +1,6 @@
 import requests
 import json
-from data import load_data_json_contribution, data_app, prop_ids
+from load_data import load_data_contribution, prop_ids, load_data_comparison
 
 
 class TSOTSA_ORKG:
@@ -13,7 +13,7 @@ class TSOTSA_ORKG:
         self.predicate = {}
         self.comparison = {}
 
-        self.api = "https://incubating.orkg.org/api/"  # orkg incubation api
+        self.api = "https://incubating.orkg.org/api"  # orkg incubation api
         # self.api = "https://orkg.org/api"
         self.full_api = ""
 
@@ -22,8 +22,7 @@ class TSOTSA_ORKG:
         """ 
             structure of a contribution in json format
         """
-        api_contrib = "contributions/"
-        self.full_api = self.api + api_contrib + f"{contribution_id}"
+        self.full_api = f"{self.api}/contributions/{contribution_id}"
         try:
             response = requests.get(self.full_api)
 
@@ -80,29 +79,39 @@ class TSOTSA_ORKG:
         return self.contribution
 
     # create contribution
-    def create_contribution(self, paper_id):
+    def create_contribution(self, paper_id, token, json_template):
+        """ 
+            token: use to identify the users who make an write operation in orkg
+            json_template: content the data to make a contribution
+            paper_id: the id of paper which will contain the contribution added
+        """
         headers = {
             "Content-Type": "application/vnd.orkg.contribution.v2+json;charset=UTF-8",
             "Accept": "application/vnd.orkg.contribution.v2+json",
-            "Authorization": "Bearer" + "og_fcMz__PH-rGZCWJ7FQo0vMBE"
+            "Authorization": "Bearer" + token
         }
 
         self.full_api = f"{self.api}/papers/{paper_id}/contributions"
         try:
-            for data in load_data_json_contribution(data_json=data_app, property_ids=prop_ids):
-                response = requests.post(
-                    self.full_api, data=data, headers=headers)
+            with open(json_template, 'r') as f:
+                data_app = json.load(f)
+                # get all data contribution in the loader of the data
+                for data in load_data_contribution(data_json=data_app, property_ids=prop_ids):
+                    # make the post request in order to create  the contribution(s) of the paper
+                    response = requests.post(
+                        self.full_api, data=data, headers=headers)
 
-                if response.status_code == 204:
-                    print({
-                        'status': 201,
-                        'message': "contribution created successfully"
-                    })
-                else:
-                    print({
-                        'status': response.status_code,
-                        'message': response.content
-                    })
+                    if response.status_code == 201:
+                        print({
+                            'status': 201,
+                            'message': "contribution created successfully",
+                            'content': response.content
+                        })
+                    else:
+                        print({
+                            'status': response.status_code,
+                            'message': response.content
+                        })
         except ValueError as e:
             print(e)
 
@@ -133,40 +142,30 @@ class TSOTSA_ORKG:
     """
     #
 
-    def create_comparison(self, title, description, contributions, research_field_id=None):
+    def create_comparison(self, token, comparison_file_input):
         headers = {
-            "Content-Type": "application/vnd.orkg.contribution.v2+json;charset=UTF-8",
-            "Accept": "application/vnd.orkg.contribution.v2+json",
-            "Authorization": ""
+            "Content-Type": "application/vnd.orkg.comparison.v2+json;charset=UTF-8",
+            "Accept": "application/vnd.orkg.comparison.v2+json",
+            "Authorization": "Bearer" + token
         }
         self.full_api = f'{self.api}/comparisons'
 
         try:
-            data_template = {
-                "title": title if title else print("Title is required"),
-                "description": description if description else print("description is required"),
-                "research_fields": [research_field_id] if research_field_id else [],
-                "authors": [{
-                    "id": None,
-                    "name": "Jean petit",
-                    "identifiers": None,
-                    "homepage": None
-                }],
-                "references": [],
-                "contributions": contributions if contributions and len(contributions) >= 2 else print("You should at least give 2 contribution "),
-                "observatories": [],
-                "organizations": [],
-                "is_anonymized": False,
-                "extraction_method": "UNKNOWN"
-
-            }
-            json_data = json.dumps(data_template)
-
-            print(json_data)
-
+            #
             response = requests.post(
-                self.full_api, headers=headers, data=json_data)
-            print(response.content)
+                self.full_api, headers=headers, data=load_data_comparison(comparison_file_input))
+            # check if comparison was created successfully
+            if response.status_code == 201:
+                return {
+                    "status": 201,
+                    "message": 'comparison created successfully',
+                    "content": response.content
+                }
+            else:
+                return {
+                    "status": response.status_code,
+                    "message": response.content
+                }
         except ValueError as e:
             raise ValueError(e)
 

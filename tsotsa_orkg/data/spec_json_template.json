@@ -1,0 +1,318 @@
+{
+    "name": "KNSR3854_1",
+    "paper": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+    "Visualisation": [
+        {
+            "nameFood": "Keleng Keleng",
+            "numberRecipes": 16,
+            "components": [
+                {
+                    "nameComponent": "Energy",
+                    "valueComponent": 152,
+                    "unit": "Kcal"
+                },
+                {
+                    "nameComponent": "Energy",
+                    "valueComponent": 637,
+                    "unit": "KJ"
+                },
+                {
+                    "nameComponent": "Water",
+                    "valueComponent": 78.7,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Protein",
+                    "valueComponent": 5.7,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Carbohydrates",
+                    "valueComponent": 3.2,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Fat",
+                    "valueComponent": 13.9,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Saturated Fat",
+                    "valueComponent": 4.7,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Monounsaturated Fat",
+                    "valueComponent": 5.8,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Polyunsaturated Fat",
+                    "valueComponent": 2.7,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Omega-3 fatty acid",
+                    "valueComponent": 0,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Omega-6 fatty acid",
+                    "valueComponent": 2.5,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Cholesterol",
+                    "valueComponent": 0.2,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Total dietary fiber",
+                    "valueComponent": 1.4,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Thiamin",
+                    "valueComponent": 0.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Riboflavin",
+                    "valueComponent": 0.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Niacin",
+                    "valueComponent": 1.6,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Vitamin B-6",
+                    "valueComponent": 0.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Total folate",
+                    "valueComponent": 59.4,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Vitamin C",
+                    "valueComponent": 12.8,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Vitamin A (retinol equivalent)",
+                    "valueComponent": 73.1,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Vitamin K ",
+                    "valueComponent": 195,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Calcium",
+                    "valueComponent": 60.4,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Iron",
+                    "valueComponent": 1.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Zinc",
+                    "valueComponent": 0.6,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Magnesium",
+                    "valueComponent": 39.5,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Manganese",
+                    "valueComponent": 0.5,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Selenium",
+                    "valueComponent": 1.2,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Phosphorus",
+                    "valueComponent": 88.2,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Potassium",
+                    "valueComponent": 298,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Sodium",
+                    "valueComponent": 32.6,
+                    "unit": "mg"
+                }
+            ]
+        },
+        {
+            "nameFood": "Kpem(cassava leaves)",
+            "numberRecipes": 13,
+            "components": [
+                {
+                    "nameComponent": "Energy",
+                    "valueComponent": 153,
+                    "unit": "Kcal"
+                },
+                {
+                    "nameComponent": "Energy",
+                    "valueComponent": 643,
+                    "unit": "KJ"
+                },
+                {
+                    "nameComponent": "Water",
+                    "valueComponent": 84.9,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Protein",
+                    "valueComponent": 3,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Carbohydrates",
+                    "valueComponent": 2.3,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Fat",
+                    "valueComponent": 15.5,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Saturated Fat",
+                    "valueComponent": 6.6,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Monounsaturated Fat",
+                    "valueComponent": 6,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Polyunsaturated Fat",
+                    "valueComponent": 2.1,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Omega-3 fatty acid",
+                    "valueComponent": 0.1,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Omega-6 fatty acid",
+                    "valueComponent": 2,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Cholesterol",
+                    "valueComponent": 0,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Total dietary fiber",
+                    "valueComponent": 0.9,
+                    "unit": "g"
+                },
+                {
+                    "nameComponent": "Thiamin",
+                    "valueComponent": 0.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Riboflavin",
+                    "valueComponent": 0.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Niacin",
+                    "valueComponent": 0.9,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Vitamin B-6",
+                    "valueComponent": 0.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Total folate",
+                    "valueComponent": 55,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Vitamin C",
+                    "valueComponent": 16.5,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Vitamin A (retinol equivalent)",
+                    "valueComponent": 101,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Vitamin K ",
+                    "valueComponent": 269,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Calcium",
+                    "valueComponent": 69.1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Iron",
+                    "valueComponent": 1,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Zinc",
+                    "valueComponent": 0.4,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Magnesium",
+                    "valueComponent": 32.9,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Manganese",
+                    "valueComponent": 0.4,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Selenium",
+                    "valueComponent": 0.8,
+                    "unit": "micro g"
+                },
+                {
+                    "nameComponent": "Phosphorus",
+                    "valueComponent": 51.3,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Potassium",
+                    "valueComponent": 269,
+                    "unit": "mg"
+                },
+                {
+                    "nameComponent": "Sodium",
+                    "valueComponent": 26.1,
+                    "unit": "mg"
+                }
+            ]
+        }
+    ]
+}

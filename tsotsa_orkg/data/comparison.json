@@ -1,0 +1,22 @@
+{
+    "title": "Comparison 1",
+    "description": "Comparison 1",
+    "research_fields": [],
+    "authors": [
+        {
+            "id": null,
+            "name": "Jean petit",
+            "identifiers": null,
+            "homepage": null
+        }
+    ],
+    "references": [],
+    "contributions": [
+        "R903146",
+        "R903147"
+    ],
+    "observatories": [],
+    "organizations": [],
+    "is_anonymized": false,
+    "extraction_method": "UNKNOWN"
+}
