@@ -6,6 +6,5 @@ setup(
     description='make automatic import in orkg',
     author_email="jeanpetityvelos@gmail.com",
     author='jean petit',
-    py_modules=['tsotsa_orkg.py'],
     license="MIT"
 )

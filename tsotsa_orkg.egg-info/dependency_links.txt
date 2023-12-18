@@ -1,10 +1,1 @@
 
-t 1
-u 2
-v 3
-gl 4
-gh 5
-r 6
-tgh 7
-R2 8
-Fiju 9
