@@ -3,7 +3,7 @@ import json
 from load_data import load_data_contribution, prop_ids, load_data_comparison
 
 
-class TSOTSA_ORKG:
+class _ORKG:
 
     def __init__(self):
 
@@ -140,9 +140,8 @@ class TSOTSA_ORKG:
         3. create dataframe to display the comparison
     
     """
-    #
 
-    def create_comparison(self, token, comparison_file_input):
+    def create_comparison(self, token, comparison_input):
         headers = {
             "Content-Type": "application/vnd.orkg.comparison.v2+json;charset=UTF-8",
             "Accept": "application/vnd.orkg.comparison.v2+json",
@@ -151,9 +150,9 @@ class TSOTSA_ORKG:
         self.full_api = f'{self.api}/comparisons'
 
         try:
-            #
+            # post the data
             response = requests.post(
-                self.full_api, headers=headers, data=load_data_comparison(comparison_file_input))
+                self.full_api, headers=headers, data=load_data_comparison(comparison_input))
             # check if comparison was created successfully
             if response.status_code == 201:
                 return {
@@ -169,29 +168,78 @@ class TSOTSA_ORKG:
         except ValueError as e:
             raise ValueError(e)
 
-    def compare_contribution(self, data, comparison_id):
+    def compare_contribution(self, contributions, comparison_id):
+        # def compare_contribution(self, token, comparison_input):
+        """ 
+            Comparison_input: it is file template that content data to post in order to create comparison like
+            title, description, references, contributions.. etc
+        """
+
+        # call function that allows us to create a comparison using orkg api
+        # comparison = self.create_comparison(
+        #     token=token, comparison_input=comparison_input)
+
+        # data format when we use simcomp api got get contribution to compare
+        data_format = {
+            "thing_type": "COMPARISON",
+            "thing_key": "",
+            "config": {
+                "contributions": [
+                    "R837784",
+                    "R837785"
+                ],
+                "predicates": [],
+                "type": "PATH",
+                "transpose": False
+            },
+            "data": {
+            }
+        }
 
         headers = {
             'Content-Type': 'application/json'
         }
-        self.full_api = "https://incubating.orkg.org/simcomp/contribution/compare?contributions=R837784&contributions=R837785&type=PATH"
+        self.full_api = "https://incubating.orkg.org/simcomp/contribution/compare?"
+        try:
 
-        response = requests.get(self.full_api, headers=headers)
-        response_decoded = json.loads(response.content)
+            if len(contributions) >= 2:
+                i = 0
+                contrib = ""
+                # format contribution to appropriate form corresponding in simcomp api
+                for item in contributions:
+                    if i == 0:
+                        contrib += f"contributions={item}"
+                        i += 1
+                    else:
+                        contrib += f"&contributions={item}"
+                        i += 1
+                self.full_api = f"{self.full_api}{contrib}&type=PATH"
+                #  get contribution to comapare
+                response = requests.get(self.full_api, headers=headers)
+                # use json load to decote the byte binary response
+                response_decoded = json.loads(response.content)
+                # set data
+                data_format["data"]['contributions'] = response_decoded['payload']['comparison']['contributions']
+                data_format['data']['predicates'] = response_decoded['payload']['comparison']['predicates']
+                data_format['data']['data'] = response_decoded['payload']['comparison']['data']
+                data_format['thing_key'] = comparison_id
+                # dumps de json data
+                json_data = json.dumps(data_format)
 
-        data["data"]['contributions'] = response_decoded['payload']['comparison']['contributions']
-        data['data']['predicates'] = response_decoded['payload']['comparison']['predicates']
-        data['data']['data'] = response_decoded['payload']['comparison']['data']
-        data['thing_key'] = comparison_id
+                # store the data in a file
+                output_file = "data.json"
+                with open(output_file, "w") as file:
+                    json.dump(data_format, file)
 
-        json_data = json.dumps(data)
+                print(data_format)
+                return json_data
+            else:
+                raise ValueError(
+                    'Your must provide at least 2 contributions to compare')
+        except:
+            raise ValueError("error during the process")
 
-        output_file = "data.json"
-        with open(output_file, "w") as file:
-            json.dump(data, file)
-        print(data)
-        return json_data
-
+    # ceate dataframe comparison in order to populate the comparison with contribution data
     def create_dataframe_comparison(self, data, comparison_id):
         headers = {
             'Accept': 'application/json',

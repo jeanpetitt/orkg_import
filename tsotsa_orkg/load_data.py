@@ -23,7 +23,7 @@ def load_data_contribution(data_json, property_ids):
         }
     }
 
-    for item in data_json['Visualisation']:
+    for item in data_json['visualisation']:
         i = 1
         # add name food as a contribution
         contribution_label = item['nameFood']

@@ -1,16 +1,16 @@
-from tsotsa import TSOTSA_ORKG
-from orkg import ORKG
+from tsotsa import _ORKG
+# from orkg import ORKG
 
-ork = ORKG()
-print(ork._authenticate(email="jeanpetityvelos@gmail.com", password="2002jeanpetit"))
+# ork = ORKG()
+# print(ork._authenticate(email="jeanpetityvelos@gmail.com", password="2002jeanpetit"))
 
 
-orkg = TSOTSA_ORKG()
+orkg = _ORKG()
 
 # orkg.create_contribution("R903121", token="og_fcMz__PH-rGZCWJ7FQo0vMBE",
 #                          json_template="tsotsa_orkg/data/spec_json_template.json")
-print(orkg.create_comparison(token="og_fcMz__PH-rGZCWJ7FQo0vMBE",
-                             comparison_file_input='tsotsa_orkg/data/comparison.json'))
+print(orkg.create_comparison(token="PJH3kMD7hpp1UIHnSGJKInAPyAs",
+                             comparison_input='tsotsa_orkg/data/comparison.json'))
 
 # data = {
 #   "title" : "test1",

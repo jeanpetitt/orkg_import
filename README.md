@@ -1,2 +1,2 @@
-# ORKG: Programming import
+# ORKG Annotation
 
