@@ -1,8 +1,14 @@
 {
-    "title": "Comparison 1",
-    "description": "Comparison 1",
+    "title": "Comparison 2",
+    "description": "Comparison 2",
     "research_fields": [],
     "authors": [
+        {
+            "id": null,
+            "name": "Jean petit",
+            "identifiers": null,
+            "homepage": null
+        },
         {
             "id": null,
             "name": "Jean petit",

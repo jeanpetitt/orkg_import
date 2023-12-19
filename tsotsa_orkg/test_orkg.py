@@ -7,10 +7,10 @@ from tsotsa import _ORKG
 
 orkg = _ORKG()
 
-# orkg.create_contribution("R903121", token="og_fcMz__PH-rGZCWJ7FQo0vMBE",
-#                          json_template="tsotsa_orkg/data/spec_json_template.json")
-print(orkg.create_comparison(token="PJH3kMD7hpp1UIHnSGJKInAPyAs",
-                             comparison_input='tsotsa_orkg/data/comparison.json'))
+orkg.create_contribution("R342158", token="gojjjA3aSjrNLpcFOK7PupciALQ",
+                         json_template="tsotsa_orkg/data/contributions/spec_json_template.json")
+# print(orkg.create_comparison(token="gojjjA3aSjrNLpcFOK7PupciALQ",
+#                              comparison_input='tsotsa_orkg/data/comparisons/create_comparison.json'))
 
 # data = {
 #   "title" : "test1",

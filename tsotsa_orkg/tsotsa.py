@@ -13,7 +13,7 @@ class _ORKG:
         self.predicate = {}
         self.comparison = {}
 
-        self.api = "https://incubating.orkg.org/api"  # orkg incubation api
+        self.api = "https://sandbox.orkg.org/api"  # orkg incubation api
         # self.api = "https://orkg.org/api"
         self.full_api = ""
 
@@ -158,7 +158,7 @@ class _ORKG:
                 return {
                     "status": 201,
                     "message": 'comparison created successfully',
-                    "content": response.content
+                    "content": response.headers
                 }
             else:
                 return {
