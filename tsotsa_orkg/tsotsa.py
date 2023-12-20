@@ -13,7 +13,7 @@ class _ORKG:
         self.predicate = {}
         self.comparison = {}
 
-        self.api = "https://sandbox.orkg.org/api"  # orkg incubation api
+        self.api = "https://incubating.orkg.org/api"  # orkg incubation api
         # self.api = "https://orkg.org/api"
         self.full_api = ""
 
@@ -158,36 +158,46 @@ class _ORKG:
                 return {
                     "status": 201,
                     "message": 'comparison created successfully',
-                    "content": response.headers
+                    # location url/ split.("/")[-1] in order to get id
+                    "comparison_id": response.headers['Location'].split('/')[-1],
+                    "content": response.headers['Location']
                 }
             else:
-                return {
+                print({
                     "status": response.status_code,
                     "message": response.content
-                }
+                })
         except ValueError as e:
             raise ValueError(e)
 
-    def compare_contribution(self, contributions, comparison_id):
-        # def compare_contribution(self, token, comparison_input):
+    # def compare_contribution(self, contributions, comparison_id):
+    def compare_contribution(self, token, comparison_input):
         """ 
             Comparison_input: it is file template that content data to post in order to create comparison like
             title, description, references, contributions.. etc
         """
 
+        # get contributions
+        # return a json object that contain input for the comparison
+        datas = ''
+        with open(comparison_input, 'r') as f:
+
+            datas = json.load(f)
+            print("======= STEP 1: Compare contributions============")
+            print(datas['contributions'])
+
         # call function that allows us to create a comparison using orkg api
-        # comparison = self.create_comparison(
-        #     token=token, comparison_input=comparison_input)
+        comparison = self.create_comparison(
+            token=token, comparison_input=comparison_input)
+        print("======= STEP 2: generate comparison")
+        print("comparison_id generated: ", comparison['comparison_id'])
 
         # data format when we use simcomp api got get contribution to compare
         data_format = {
             "thing_type": "COMPARISON",
-            "thing_key": "",
+            "thing_key": comparison['comparison_id'],
             "config": {
-                "contributions": [
-                    "R837784",
-                    "R837785"
-                ],
+                "contributions": datas['contributions'],
                 "predicates": [],
                 "type": "PATH",
                 "transpose": False
@@ -202,11 +212,11 @@ class _ORKG:
         self.full_api = "https://incubating.orkg.org/simcomp/contribution/compare?"
         try:
 
-            if len(contributions) >= 2:
+            if len(datas['contributions']) >= 2:
                 i = 0
                 contrib = ""
                 # format contribution to appropriate form corresponding in simcomp api
-                for item in contributions:
+                for item in datas['contributions']:
                     if i == 0:
                         contrib += f"contributions={item}"
                         i += 1
@@ -222,16 +232,14 @@ class _ORKG:
                 data_format["data"]['contributions'] = response_decoded['payload']['comparison']['contributions']
                 data_format['data']['predicates'] = response_decoded['payload']['comparison']['predicates']
                 data_format['data']['data'] = response_decoded['payload']['comparison']['data']
-                data_format['thing_key'] = comparison_id
                 # dumps de json data
                 json_data = json.dumps(data_format)
 
                 # store the data in a file
-                output_file = "data.json"
+                output_file = "test/data.json"
                 with open(output_file, "w") as file:
                     json.dump(data_format, file)
 
-                print(data_format)
                 return json_data
             else:
                 raise ValueError(
@@ -240,13 +248,30 @@ class _ORKG:
             raise ValueError("error during the process")
 
     # ceate dataframe comparison in order to populate the comparison with contribution data
-    def create_dataframe_comparison(self, data, comparison_id):
+    def create_dataframe_comparison(self, token, comparison_input):
         headers = {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            # "Authorization": "Bearer" + token
         }
+        data = self.compare_contribution(
+            token=token, comparison_input=comparison_input)
+        print("======= STEP 3: populate comparison with contributions data ============")
+        try:
 
-        url = "https://incubating.orkg.org/simcomp/thing/"
-        response = requests.post(
-            url, data=self.compare_contribution(data, comparison_id), headers=headers)
-        print(response.content)
+            self.full_api = "https://incubating.orkg.org/simcomp/thing/"
+            response = requests.post(
+                self.full_api, data=data, headers=headers)
+            if response.status_code == 201:
+                return {
+                    "status": 201,
+                    "message": "Success",
+                    "content": response.content
+                }
+            else:
+                return {
+                    "status": response.status_code,
+                    "content": response.content
+                }
+        except ValueError as e:
+            return ValueError(e)

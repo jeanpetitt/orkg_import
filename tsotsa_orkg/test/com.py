@@ -80,5 +80,5 @@ def populate_comparison(comparison_id, contributions):
         raise ValueError(e)
 
 
-populate_comparison("R903148", ["R903146",
+populate_comparison("R937639", ["R903146",
                                 "R903147"])
