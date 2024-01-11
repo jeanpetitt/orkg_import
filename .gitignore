@@ -4,3 +4,5 @@ test*.*
 cleanFile
 dist
 tsotsa_orkg.egg-info
+fech_props*
+setup.py

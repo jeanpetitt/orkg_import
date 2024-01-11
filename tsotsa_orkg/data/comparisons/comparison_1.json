@@ -1,0 +1,30 @@
+{
+    "title": "Comparison demo  8",
+    "description": "comparison demo 8",
+    "research_fields": [],
+    "authors": [
+        {
+            "id": null,
+            "name": "Jean petit",
+            "identifiers": null,
+            "homepage": null
+        },
+        {
+            "id": null,
+            "name": "Azanzi Jiomekong",
+            "identifiers": null,
+            "homepage": null
+        }
+    ],
+    "references": [],
+    "contributions": [
+        "R977038",
+        "R903147",
+        "R903146",
+        "R977036"
+    ],
+    "observatories": [],
+    "organizations": [],
+    "is_anonymized": false,
+    "extraction_method": "UNKNOWN"
+}

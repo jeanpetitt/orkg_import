@@ -1,6 +1,0 @@
-README.md
-tsotsa_orkg/__init__.py
-tsotsa_orkg.egg-info/PKG-INFO
-tsotsa_orkg.egg-info/SOURCES.txt
-tsotsa_orkg.egg-info/dependency_links.txt
-tsotsa_orkg.egg-info/top_level.txt

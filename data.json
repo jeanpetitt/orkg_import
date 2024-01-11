@@ -1,10 +1,10 @@
 {
     "thing_type": "COMPARISON",
-    "thing_key": "R903148",
+    "thing_key": "R977044",
     "config": {
         "contributions": [
-            "R837784",
-            "R837785"
+            "R977039",
+            "R977038"
         ],
         "predicates": [],
         "type": "PATH",
@@ -13,15 +13,15 @@
     "data": {
         "contributions": [
             {
-                "id": "R903146",
-                "label": "Keleng Keleng",
+                "id": "R977039",
+                "label": "Fish stew",
                 "paper_id": "R903121",
                 "paper_label": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
                 "paper_year": 2007
             },
             {
-                "id": "R903147",
-                "label": "Kpem(cassava leaves)",
+                "id": "R977038",
+                "label": "Huckleberry soup and pumpkin leaves",
                 "paper_id": "R903121",
                 "paper_label": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
                 "paper_year": 2007
@@ -236,15 +236,15 @@
             "calcium ": [
                 [
                     {
-                        "id": "L1337551",
-                        "label": "60.4",
+                        "id": "L1420234",
+                        "label": "13.9",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107044"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Calcium "
                         ],
                         "_class": "literal"
@@ -252,15 +252,15 @@
                 ],
                 [
                     {
-                        "id": "L1337580",
-                        "label": "69.1",
+                        "id": "L1420205",
+                        "label": "50.5",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107044"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Calcium "
                         ],
                         "_class": "literal"
@@ -270,15 +270,15 @@
             "carbohydrates": [
                 [
                     {
-                        "id": "L1337534",
-                        "label": "3.2",
+                        "id": "L1420217",
+                        "label": "2.8",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107027"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Carbohydrates"
                         ],
                         "_class": "literal"
@@ -286,15 +286,15 @@
                 ],
                 [
                     {
-                        "id": "L1337563",
-                        "label": "2.3",
+                        "id": "L1420188",
+                        "label": "1.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107027"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Carbohydrates"
                         ],
                         "_class": "literal"
@@ -304,15 +304,15 @@
             "cholesterol": [
                 [
                     {
-                        "id": "L1337541",
-                        "label": "0.2",
+                        "id": "L1420224",
+                        "label": "0",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107034"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Cholesterol"
                         ],
                         "_class": "literal"
@@ -320,15 +320,15 @@
                 ],
                 [
                     {
-                        "id": "L1337570",
+                        "id": "L1420195",
                         "label": "0",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107034"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Cholesterol"
                         ],
                         "_class": "literal"
@@ -338,15 +338,15 @@
             "energy": [
                 [
                     {
-                        "id": "L1337531",
-                        "label": "637",
+                        "id": "L1420214",
+                        "label": "788",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107024"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Energy"
                         ],
                         "_class": "literal"
@@ -354,15 +354,15 @@
                 ],
                 [
                     {
-                        "id": "L1337560",
-                        "label": "643",
+                        "id": "L1420185",
+                        "label": "560",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107024"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Energy"
                         ],
                         "_class": "literal"
@@ -372,15 +372,15 @@
             "fat": [
                 [
                     {
-                        "id": "L1337535",
-                        "label": "13.9",
+                        "id": "L1420218",
+                        "label": "19.4",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107028"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Fat"
                         ],
                         "_class": "literal"
@@ -388,15 +388,15 @@
                 ],
                 [
                     {
-                        "id": "L1337564",
-                        "label": "15.5",
+                        "id": "L1420189",
+                        "label": "14.5",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107028"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Fat"
                         ],
                         "_class": "literal"
@@ -406,15 +406,15 @@
             "iron": [
                 [
                     {
-                        "id": "L1337552",
-                        "label": "1.1",
+                        "id": "L1420235",
+                        "label": "0.4",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107045"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Iron"
                         ],
                         "_class": "literal"
@@ -422,15 +422,15 @@
                 ],
                 [
                     {
-                        "id": "L1337581",
-                        "label": "1",
+                        "id": "L1420206",
+                        "label": "0.6",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107045"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Iron"
                         ],
                         "_class": "literal"
@@ -440,15 +440,15 @@
             "magnesium": [
                 [
                     {
-                        "id": "L1337554",
-                        "label": "39.5",
+                        "id": "L1420237",
+                        "label": "16.8",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107047"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Magnesium"
                         ],
                         "_class": "literal"
@@ -456,15 +456,15 @@
                 ],
                 [
                     {
-                        "id": "L1337583",
-                        "label": "32.9",
+                        "id": "L1420208",
+                        "label": "18.2",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107047"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Magnesium"
                         ],
                         "_class": "literal"
@@ -474,15 +474,15 @@
             "manganese": [
                 [
                     {
-                        "id": "L1337555",
-                        "label": "0.5",
+                        "id": "L1420238",
+                        "label": "0.2",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107048"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Manganese"
                         ],
                         "_class": "literal"
@@ -490,15 +490,15 @@
                 ],
                 [
                     {
-                        "id": "L1337584",
-                        "label": "0.4",
+                        "id": "L1420209",
+                        "label": "0.2",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107048"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Manganese"
                         ],
                         "_class": "literal"
@@ -508,15 +508,15 @@
             "monounsaturated fat": [
                 [
                     {
-                        "id": "L1337537",
-                        "label": "5.8",
+                        "id": "L1420220",
+                        "label": "7.6",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107030"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Monounsaturated fat"
                         ],
                         "_class": "literal"
@@ -524,15 +524,15 @@
                 ],
                 [
                     {
-                        "id": "L1337566",
-                        "label": "6",
+                        "id": "L1420191",
+                        "label": "5.3",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107030"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Monounsaturated fat"
                         ],
                         "_class": "literal"
@@ -542,15 +542,15 @@
             "niacin": [
                 [
                     {
-                        "id": "L1337545",
-                        "label": "1.6",
+                        "id": "L1420228",
+                        "label": "1",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107038"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Niacin"
                         ],
                         "_class": "literal"
@@ -558,15 +558,15 @@
                 ],
                 [
                     {
-                        "id": "L1337574",
-                        "label": "0.9",
+                        "id": "L1420199",
+                        "label": "0.2",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107038"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Niacin"
                         ],
                         "_class": "literal"
@@ -576,15 +576,15 @@
             "omega-3 fatty acid": [
                 [
                     {
-                        "id": "L1337539",
+                        "id": "L1420222",
                         "label": "0",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107032"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Omega-3 fatty acid"
                         ],
                         "_class": "literal"
@@ -592,15 +592,15 @@
                 ],
                 [
                     {
-                        "id": "L1337568",
+                        "id": "L1420193",
                         "label": "0.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107032"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Omega-3 fatty acid"
                         ],
                         "_class": "literal"
@@ -610,15 +610,15 @@
             "omega-6 fatty acid": [
                 [
                     {
-                        "id": "L1337540",
-                        "label": "2.5",
+                        "id": "L1420223",
+                        "label": "2.6",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107033"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Omega-6 fatty acid"
                         ],
                         "_class": "literal"
@@ -626,15 +626,15 @@
                 ],
                 [
                     {
-                        "id": "L1337569",
-                        "label": "2",
+                        "id": "L1420194",
+                        "label": "1.3",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107033"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Omega-6 fatty acid"
                         ],
                         "_class": "literal"
@@ -644,15 +644,15 @@
             "phosphorus": [
                 [
                     {
-                        "id": "L1337557",
-                        "label": "88.2",
+                        "id": "L1420240",
+                        "label": "35.5",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107050"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Phosphorus"
                         ],
                         "_class": "literal"
@@ -660,15 +660,15 @@
                 ],
                 [
                     {
-                        "id": "L1337586",
-                        "label": "51.3",
+                        "id": "L1420211",
+                        "label": "18.2",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107050"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Phosphorus"
                         ],
                         "_class": "literal"
@@ -678,15 +678,15 @@
             "polyunsaturated fat": [
                 [
                     {
-                        "id": "L1337538",
-                        "label": "2.7",
+                        "id": "L1420221",
+                        "label": "2.6",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107031"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Polyunsaturated fat"
                         ],
                         "_class": "literal"
@@ -694,15 +694,15 @@
                 ],
                 [
                     {
-                        "id": "L1337567",
-                        "label": "2.1",
+                        "id": "L1420192",
+                        "label": "1.4",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107031"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Polyunsaturated fat"
                         ],
                         "_class": "literal"
@@ -712,15 +712,15 @@
             "potassium ": [
                 [
                     {
-                        "id": "L1337558",
-                        "label": "298",
+                        "id": "L1420241",
+                        "label": "113",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107051"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Potassium "
                         ],
                         "_class": "literal"
@@ -728,15 +728,15 @@
                 ],
                 [
                     {
-                        "id": "L1337587",
-                        "label": "269",
+                        "id": "L1420212",
+                        "label": "171",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107051"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Potassium "
                         ],
                         "_class": "literal"
@@ -746,15 +746,15 @@
             "protein": [
                 [
                     {
-                        "id": "L1337533",
-                        "label": "5.7",
+                        "id": "L1420216",
+                        "label": "2.1",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107026"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Protein"
                         ],
                         "_class": "literal"
@@ -762,15 +762,15 @@
                 ],
                 [
                     {
-                        "id": "L1337562",
-                        "label": "3",
+                        "id": "L1420187",
+                        "label": "0.9",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107026"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Protein"
                         ],
                         "_class": "literal"
@@ -780,15 +780,15 @@
             "riboflavin": [
                 [
                     {
-                        "id": "L1337544",
-                        "label": "0.1",
+                        "id": "L1420227",
+                        "label": "0",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107037"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Riboflavin"
                         ],
                         "_class": "literal"
@@ -796,15 +796,15 @@
                 ],
                 [
                     {
-                        "id": "L1337573",
+                        "id": "L1420198",
                         "label": "0.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107037"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Riboflavin"
                         ],
                         "_class": "literal"
@@ -814,15 +814,15 @@
             "saturated fat": [
                 [
                     {
-                        "id": "L1337536",
-                        "label": "4.7",
+                        "id": "L1420219",
+                        "label": "8.3",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107029"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Saturated fat"
                         ],
                         "_class": "literal"
@@ -830,15 +830,15 @@
                 ],
                 [
                     {
-                        "id": "L1337565",
-                        "label": "6.6",
+                        "id": "L1420190",
+                        "label": "7.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107029"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Saturated fat"
                         ],
                         "_class": "literal"
@@ -848,15 +848,15 @@
             "selenium": [
                 [
                     {
-                        "id": "L1337556",
-                        "label": "1.2",
+                        "id": "L1420239",
+                        "label": "0.6",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107049"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Selenium"
                         ],
                         "_class": "literal"
@@ -864,15 +864,15 @@
                 ],
                 [
                     {
-                        "id": "L1337585",
-                        "label": "0.8",
+                        "id": "L1420210",
+                        "label": "0.3",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107049"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Selenium"
                         ],
                         "_class": "literal"
@@ -882,15 +882,15 @@
             "sodium": [
                 [
                     {
-                        "id": "L1337559",
-                        "label": "32.6",
+                        "id": "L1420242",
+                        "label": "5.3",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107052"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Sodium"
                         ],
                         "_class": "literal"
@@ -898,15 +898,15 @@
                 ],
                 [
                     {
-                        "id": "L1337588",
-                        "label": "26.1",
+                        "id": "L1420213",
+                        "label": "17.5",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107052"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Sodium"
                         ],
                         "_class": "literal"
@@ -916,15 +916,15 @@
             "thiamin": [
                 [
                     {
-                        "id": "L1337543",
+                        "id": "L1420226",
                         "label": "0.1",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107036"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Thiamin"
                         ],
                         "_class": "literal"
@@ -932,15 +932,15 @@
                 ],
                 [
                     {
-                        "id": "L1337572",
-                        "label": "0.1",
+                        "id": "L1420197",
+                        "label": "0",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107036"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Thiamin"
                         ],
                         "_class": "literal"
@@ -950,15 +950,15 @@
             "total dietary fiber": [
                 [
                     {
-                        "id": "L1337542",
-                        "label": "1.4",
+                        "id": "L1420225",
+                        "label": "1.2",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107035"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Total dietary fiber"
                         ],
                         "_class": "literal"
@@ -966,15 +966,15 @@
                 ],
                 [
                     {
-                        "id": "L1337571",
-                        "label": "0.9",
+                        "id": "L1420196",
+                        "label": "0.3",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107035"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Total dietary fiber"
                         ],
                         "_class": "literal"
@@ -984,15 +984,15 @@
             "total folate": [
                 [
                     {
-                        "id": "L1337547",
-                        "label": "59.4",
+                        "id": "L1420230",
+                        "label": "25.8",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107040"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Total folate"
                         ],
                         "_class": "literal"
@@ -1000,15 +1000,15 @@
                 ],
                 [
                     {
-                        "id": "L1337576",
-                        "label": "55",
+                        "id": "L1420201",
+                        "label": "32.9",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107040"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Total folate"
                         ],
                         "_class": "literal"
@@ -1018,15 +1018,15 @@
             "vitamin a ( retinol equivalent)": [
                 [
                     {
-                        "id": "L1337549",
-                        "label": "73.1",
+                        "id": "L1420232",
+                        "label": "1.2",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107042"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Vitamin A ( retinol equivalent)"
                         ],
                         "_class": "literal"
@@ -1034,15 +1034,15 @@
                 ],
                 [
                     {
-                        "id": "L1337578",
-                        "label": "101",
+                        "id": "L1420203",
+                        "label": "80.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107042"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Vitamin A ( retinol equivalent)"
                         ],
                         "_class": "literal"
@@ -1052,15 +1052,15 @@
             "vitamin b-6 ": [
                 [
                     {
-                        "id": "L1337546",
+                        "id": "L1420229",
                         "label": "0.1",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107039"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Vitamin B-6 "
                         ],
                         "_class": "literal"
@@ -1068,15 +1068,15 @@
                 ],
                 [
                     {
-                        "id": "L1337575",
+                        "id": "L1420200",
                         "label": "0.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107039"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Vitamin B-6 "
                         ],
                         "_class": "literal"
@@ -1086,15 +1086,15 @@
             "vitamin c ": [
                 [
                     {
-                        "id": "L1337548",
-                        "label": "12.8",
+                        "id": "L1420231",
+                        "label": "4.1",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107041"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Vitamin C "
                         ],
                         "_class": "literal"
@@ -1102,15 +1102,15 @@
                 ],
                 [
                     {
-                        "id": "L1337577",
-                        "label": "16.5",
+                        "id": "L1420202",
+                        "label": "13.1",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107041"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Vitamin C "
                         ],
                         "_class": "literal"
@@ -1120,15 +1120,15 @@
             "vitamin k ": [
                 [
                     {
-                        "id": "L1337550",
-                        "label": "195",
+                        "id": "L1420233",
+                        "label": "5.3",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107043"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Vitamin K "
                         ],
                         "_class": "literal"
@@ -1136,15 +1136,15 @@
                 ],
                 [
                     {
-                        "id": "L1337579",
-                        "label": "269",
+                        "id": "L1420204",
+                        "label": "214",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107043"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Vitamin K "
                         ],
                         "_class": "literal"
@@ -1154,15 +1154,15 @@
             "water": [
                 [
                     {
-                        "id": "L1337532",
-                        "label": "78.7",
+                        "id": "L1420215",
+                        "label": "75.1",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107025"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Water"
                         ],
                         "_class": "literal"
@@ -1170,15 +1170,15 @@
                 ],
                 [
                     {
-                        "id": "L1337561",
-                        "label": "84.9",
+                        "id": "L1420186",
+                        "label": "83",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107025"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Water"
                         ],
                         "_class": "literal"
@@ -1188,15 +1188,15 @@
             "zinc ": [
                 [
                     {
-                        "id": "L1337553",
-                        "label": "0.6",
+                        "id": "L1420236",
+                        "label": "0.3",
                         "classes": [],
                         "path": [
-                            "R903146",
+                            "R977039",
                             "P107046"
                         ],
                         "path_labels": [
-                            "Keleng Keleng",
+                            "Fish stew",
                             "Zinc "
                         ],
                         "_class": "literal"
@@ -1204,15 +1204,15 @@
                 ],
                 [
                     {
-                        "id": "L1337582",
-                        "label": "0.4",
+                        "id": "L1420207",
+                        "label": "0.2",
                         "classes": [],
                         "path": [
-                            "R903147",
+                            "R977038",
                             "P107046"
                         ],
                         "path_labels": [
-                            "Kpem(cassava leaves)",
+                            "Huckleberry soup and pumpkin leaves",
                             "Zinc "
                         ],
                         "_class": "literal"

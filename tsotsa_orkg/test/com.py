@@ -9,8 +9,9 @@ def compare_contribution(contributions, comparison_id):
         "thing_key": "",
         "config": {
             "contributions": [
-                "R837784",
-                "R837785"
+                "R977038",
+                "R903147",
+                "R903146"
             ],
             "predicates": [],
             "type": "PATH",
@@ -80,5 +81,10 @@ def populate_comparison(comparison_id, contributions):
         raise ValueError(e)
 
 
-populate_comparison("R937639", ["R903146",
-                                "R903147"])
+populate_comparison(contributions=["R977038",
+                                   "R903147",
+                                   "R903146"], comparison_id="R977056")
+
+# compare_contribution(contributions=["R977038",
+#                                     "R903147",
+#                                     "R903146"], comparison_id="R977056")
