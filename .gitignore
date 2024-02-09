@@ -6,3 +6,4 @@ dist
 tsotsa_orkg.egg-info
 fech_props*
 setup.py
+*.env

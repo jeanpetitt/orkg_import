@@ -10,13 +10,27 @@ class _ORKG:
 
         self.paper = {}
         self.contribution = {}
-        self.ressource = {}
-        self.predicate = {}
         self.comparison = {}
 
-        self.api = "https://incubating.orkg.org/api"  # orkg incubation api
-        # self.api = "https://orkg.org/api"
+        self.api = ""
         self.full_api = ""
+
+    # getter
+    def get_api(self):
+        return self.api
+
+    def get_contribution(self):
+        return self.contribution
+
+    def get_comparison(self):
+        return self.comparison
+
+    def get_paper(self):
+        return self.paper
+
+    # setter
+    def set_api(self, api):
+        self.api = api
 
     # fetch a specific contribution
     def get_contribution(self, contribution_id):
@@ -117,7 +131,6 @@ class _ORKG:
             print(e)
 
     # fetch a specific contribution
-
     def get_comparison(self, contribution_id):
         """ 
             structure of a contribution in json format
