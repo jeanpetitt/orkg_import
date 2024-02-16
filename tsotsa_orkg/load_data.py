@@ -1,7 +1,7 @@
 import json
 
 
-def load_data_contribution(data_json, property_ids):
+def load_data_contribution(data_json):
     list_contribution = []
     # contribution template
     data_template = {
@@ -23,21 +23,21 @@ def load_data_contribution(data_json, property_ids):
         }
     }
 
-    for item in data_json['visualisation']:
+    for item in data_json['table']:
         i = 1
         # add name food as a contribution
-        contribution_label = item['nameFood']
+        contribution_label = item['contribution_label']
         data_template["contribution"]['label'] = contribution_label
 
         # add values to property
-        for props in item['components']:
+        for props in item['properties']:
             data_template["literals"][f'#temp{i}'] = {
-                'label': props['valueComponent'],
+                'label': props['value'],
                 'data_type': 'xsd:decimal'
             }
 
-            # add property to contribution (i-1 because the first elements of the list have 0 as index)
-            data_template["contribution"]["statements"][f"{property_ids[i-1]}"] = [{
+            # add property to contribution
+            data_template["contribution"]["statements"][f"{props['property_id']}"] = [{
                 "id": f"#temp{i}"
             }]
             i += 1
@@ -84,3 +84,37 @@ prop_ids = [
 ]
 
 # print(load_data_contribution(data_json=data_app, property_ids=prop_ids))
+
+
+def add_property(json_data):
+    properties = []
+    new_component = []
+    with open(json_data, 'r') as f:
+        json_data = json.load(f)
+
+        for item in json_data['table']:
+            i = 0
+            for comp in item['properties']:
+                comp['property_id'] = prop_ids[i]
+                properties.append(comp)
+                i += 1
+                # print(comp)
+            item['properties'] = properties
+            properties = [it for it in item['properties']]
+
+            new_component.append(properties)
+            properties = []
+
+        i = 0
+        table = []
+        for item in json_data['table']:
+            item['properties'] = new_component[i]
+            table.append(item)
+            i += 1
+        json_data['table'] = table
+
+        with open("tsotsa_orkg/data/contributions/spec_json_template.json", 'w') as f:
+            json.dump(json_data, f)
+
+
+# add_property("tsotsa_orkg/data/contributions/spec_json_template.json")

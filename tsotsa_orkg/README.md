@@ -9,6 +9,12 @@ To write in ORKG system you should be login and to do it follow these steps:
 
 ## Contributions &&  Comparison
 
+### Navigate in the dockerfile folder
+
+```bash
+cd tsotsa_orkg
+```
+
 ### Arguments
 
 - --comparison: Specify that you want to perform comparsion tasks. It is boolean arguments
@@ -16,7 +22,6 @@ To write in ORKG system you should be login and to do it follow these steps:
 - --contribution: Specify that you want to perform contribtuion tasks. It is boolean arguments
   
 - --api: specify which api you want to use
-  
         - incubating
         - sandbox
         - orkg
@@ -30,7 +35,7 @@ To write in ORKG system you should be login and to do it follow these steps:
 To update the differents arguments you want to use navigate inside [Dockerfile comparison](./Dockerfile.comparison) or [Dockerfile contribution](./Dockerfile.contribution)
 
 ### Docker image
-  
+
 The contribution Docker is created and started with:
 
 ```sh

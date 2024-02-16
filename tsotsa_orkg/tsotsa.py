@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from load_data import load_data_contribution, prop_ids, load_data_comparison
+from load_data import load_data_contribution, load_data_comparison
 
 
 class _ORKG:
@@ -12,7 +12,7 @@ class _ORKG:
         self.contribution = {}
         self.comparison = {}
 
-        self.api = ""
+        self.api = "https://incubating.orkg.org/api"
         self.full_api = ""
 
     # getter
@@ -111,7 +111,7 @@ class _ORKG:
             with open(json_template, 'r') as f:
                 data_app = json.load(f)
                 # get all data contribution in the loader of the data
-                for data in load_data_contribution(data_json=data_app, property_ids=prop_ids):
+                for data in load_data_contribution(data_json=data_app):
                     # make the post request in order to create  the contribution(s) of the paper
                     response = requests.post(
                         self.full_api, data=data, headers=headers)

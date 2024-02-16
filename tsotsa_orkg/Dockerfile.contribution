@@ -11,5 +11,5 @@ RUN pip install -r requirements.txt
 
 # RUN pip install -r tsotsa/requirements.txt
 
-CMD ["python", "main.py", "--api", "incubating", "--contribution", "true", "--paper_id", "R903121", \
+CMD ["python", "main.py", "--api", "incubating", "--contribution", "true", "--paper_id", "R1179016", \
     "--json_path_contribution", "data/contributions/spec_json_template.json"]
