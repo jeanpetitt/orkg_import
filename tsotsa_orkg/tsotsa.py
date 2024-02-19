@@ -32,7 +32,96 @@ class _ORKG:
     def set_api(self, api):
         self.api = api
 
+    def get_specific_paper(self, paper_id):
+        self.full_api = f"{self.api}/papers/{paper_id}"
+        try:
+            response = requests.get(self.full_api)
+            if response.status_code == 200:
+                self.paper = {
+                    'status': 200,
+                    'message': 'success',
+                    'content': response.content
+                }
+            else:
+                self.paper = {
+                    'status': response.status_code,
+                    'message': 'Failed',
+                    'content': response.content
+                }
+            return self.paper
+        except ValueError as e:
+            return e
+
+    def create_paper(self, token):
+        headers = {
+            "Content-Type": "application/vnd.orkg.paper.v2+json;charset=UTF-8",
+            "Accept": "application/vnd.orkg.paper.v2+json",
+            "Authorization": "Bearer" + token
+        }
+
+        data = {
+            "title": "Nutritional of compositional food dish",
+            "content": {},
+            "observatories": ["R498126"],
+            "research_fields": ["R12"]
+        }
+
+    def edit_paper(self, token, paper_id):
+        headers = {
+            "Content-Type": "application/vnd.orkg.paper.v2+json;charset=UTF-8",
+            "Accept": "application/vnd.orkg.paper.v2+json",
+            "Authorization": "Bearer" + token
+        }
+        paper = self.get_specific_paper(paper_id)
+        # use json load to decote the byte binary response
+        paper_json_decode = json.loads(paper['content'])
+
+        authors = []
+        for item in paper_json_decode['authors']:
+            if item['identifiers'] == {}:
+                item['identifiers'] = None
+                authors.append(item)
+            else:
+                authors.append(item)
+        data = {
+            "authors": authors,
+            "identifiers": paper_json_decode['identifiers'],
+            "observatories": ["1afefdd0-5c09-4c9c-b718-2b35316b56f3"],
+            "organizations": [],
+            "publication_info": {
+                "published_in": paper_json_decode['publication_info']['published_in']['label'],
+                "published_month": paper_json_decode['publication_info']['published_month'],
+                "published_year": paper_json_decode['publication_info']['published_year'],
+                "url": paper_json_decode['publication_info']['url']
+            },
+            "research_fields":  [field['id'] for field in paper_json_decode['research_fields']],
+            "title": paper_json_decode['title'],
+        }
+        json_data = json.dumps(data)
+        print(json_data)
+        self.full_api = f"{self.api}/papers/{paper_id}"
+        try:
+            response = requests.put(
+                self.full_api, data=json_data, headers=headers)
+
+            if response.status_code == 204:
+                self.paper = {
+                    "status": 204,
+                    "message": "Success",
+                    "content": response.headers['Location']
+                }
+                return self.paper
+            else:
+                self.paper = {
+                    "status": 204,
+                    "message": "Success",
+                    "content": response.content
+                }
+                return self.paper
+        except ValueError as e:
+            return e
     # fetch a specific contribution
+
     def get_contribution(self, contribution_id):
         """ 
             structure of a contribution in json format
@@ -46,10 +135,9 @@ class _ORKG:
                 'message': 'success',
                 'content': response.content
             }
+            return self.contribution
 
             # print(self.contribution)
-
-            return self.contribution
         except ValueError as e:
             print(str(e))
 

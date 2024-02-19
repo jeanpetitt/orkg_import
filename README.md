@@ -6,13 +6,11 @@ This package aims to make the automatic import of comparison, contribution and p
 
 Before running the project in local rest assured that you have python version >= 3.8 install on your device. if it is not the case go on [python donwload](https://www.python.org)
 
-## Contribution
+## Clone the project in your local device
 
-contribution
-
-## Comparison
-
-comparison
+```bash
+git clone https://github.com/jeanpetitt/orkg_import
+```
 
 ## Perform Contribution and Comparison tasks
 
@@ -36,7 +34,6 @@ You can perform the same tasks above by using the python script. But before it l
   * --contribution: Specify that you want to perform contribtuion tasks. It is boolean arguments
   
   * --api: specify which api you want to use
-  
         - incubating
         - sandbox
         - orkg

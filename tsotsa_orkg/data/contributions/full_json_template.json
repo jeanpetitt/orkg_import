@@ -1,6 +1,7 @@
 {
     "name": "KNSR3854_1",
     "paper": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+    "doi": " doi: 10.1080/09637480701288454",
     "table": [
         {
             "contribution_label": "Keleng Keleng",
@@ -1490,5 +1491,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "observatories": [],
+    "organizations": [],
+    "research_fields": []
 }
