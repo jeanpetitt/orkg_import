@@ -28,7 +28,7 @@ cd tsotsa_orkg
   
 - --paper_id: specify the paper where you want to add contribution(s)
   
-- --json_path_contribution: Json template which help to create a contribution. see an example here [json template example](./tsotsa_orkg/data/contributions/full_json_template.json)
+- --json_path_contribution: Json template which help to create a contribution. see an example here [json template example](./data/contributions/full_json_template.json)
 
 - --comparison_folder_path: Folder that contain json form that help to create a comparison. see an example here [folder comparison form](./tsotsa_orkg/data/comparisons/)
 
