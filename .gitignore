@@ -7,3 +7,4 @@ fech_props*
 setup.py
 *.env
 orkg_import
+data_*

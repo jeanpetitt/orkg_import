@@ -120,68 +120,58 @@ class _ORKG:
                 return self.paper
         except ValueError as e:
             return e
-    # fetch a specific contribution
 
-    def get_contribution(self, contribution_id):
-        """ 
-            structure of a contribution in json format
-        """
-        self.full_api = f"{self.api}/contributions/{contribution_id}"
-        try:
-            response = requests.get(self.full_api)
+    def _load_data_contribution(self, data_json):
+        contribution = []
+        # contribution template
+        data_template = {
 
-            self.contribution = {
-                'status': 200,
-                'message': 'success',
-                'content': response.content
-            }
-            return self.contribution
+            "literals": {
+            },
 
-            # print(self.contribution)
-        except ValueError as e:
-            print(str(e))
-
-    # fetch all contribution
-
-    def get_list_contribution(self, list_contribution_ids=None):
-        """ 
-            structure of the contributions in json format
-
-        """
-        lis_contrib = []
-        # get list contributions by enter their ids
-        if list_contribution_ids is not None:
-            for ids in list_contribution_ids:
-                self.full_api = f"{self.api}/contributions/{ids}"
-
-                try:
-                    response = requests.get(self.full_api)
-
-                    self.contribution = response.content
-                    lis_contrib.append(self.contribution)
-
-                except ValueError as e:
-                    print(str(e))
-            self.contribution = {
-                'status': 200,
-                'message': 'success',
-                'content': lis_contrib
-            }
-        # it a list ids is not given, fecth all contribution
-        else:
-            self.full_api = f"{self.api}/contributions"
-            try:
-                response = requests.get(self.full_api)
-                self.contribution = {
-                    'status': 200,
-                    'message': 'success',
-                    'content': response.content
+            "contribution": {
+                "label": "Contribution 1",
+                "statements": {
+                    "P107024": [{
+                        "id": "#temp1",
+                        # "statements": "null"
+                    }],
+                    "P107024": [{
+                        "id": "#temp1"
+                    }]
                 }
-            except ValueError as e:
-                print(e)
-        return self.contribution
+            }
+        }
+
+        for item in data_json['table']:
+            i = 1
+            # add name food as a contribution
+            contribution_label = item['contribution_label']
+            data_template["contribution"]['label'] = contribution_label
+
+            # add values to property
+            for props in item['properties']:
+                data_template["literals"][f'#temp{i}'] = {
+                    'label': props['value'],
+                    'data_type': 'xsd:decimal'
+                }
+
+                # add property to contribution
+                data_template["contribution"]["statements"][f"{props['property_id']}"] = [{
+                    "id": f"#temp{i}"
+                }]
+                i += 1
+            # json serialize
+            json_data = json.dumps(data_template)
+            contribution.append(json_data)
+            output_file = "data_contrib.json"
+            with open(output_file, "w") as file:
+                json.dump(data_template, file)
+
+        return contribution
 
     # create contribution
+
     def create_contribution(self, paper_id, token, json_template):
         """ 
             token: use to identify the users who make an write operation in orkg
@@ -194,12 +184,14 @@ class _ORKG:
             "Authorization": "Bearer" + token
         }
 
+        contribution = []
+
         self.full_api = f"{self.api}/papers/{paper_id}/contributions"
         try:
             with open(json_template, 'r') as f:
                 data_app = json.load(f)
                 # get all data contribution in the loader of the data
-                for data in load_data_contribution(data_json=data_app):
+                for data in self._load_data_contribution(data_json=data_app):
                     # make the post request in order to create  the contribution(s) of the paper
                     response = requests.post(
                         self.full_api, data=data, headers=headers)
@@ -208,32 +200,19 @@ class _ORKG:
                         print({
                             'status': 201,
                             'message': "contribution created successfully",
-                            'content': response.content
+                            'content': response.headers['Location']
                         })
+
+                        contribution.append(
+                            response.headers['Location'].split("/")[-1])
                     else:
                         print({
-                            'status': response.status_code,
+                            'status code': response.status_code,
                             'message': response.content
                         })
+            return contribution
         except ValueError as e:
             print(e)
-
-    # fetch a specific contribution
-    def get_comparison(self, contribution_id):
-        """ 
-            structure of a contribution in json format
-
-        """
-        return self.comparison
-
-    # fetch all contribution
-
-    def get_list_comparison(self):
-        """ 
-            structure of the contributions in json format
-
-        """
-        return self.comparison
 
     """ 
         creation of the comparison
@@ -243,18 +222,49 @@ class _ORKG:
     
     """
 
-    def create_comparison(self, token, comparison_file_input):
+    def _laod_comparison_form(self, token, comparison_file, paper_id, template_contribution):
+        contribution = self.create_contribution(
+            paper_id=paper_id, token=token, json_template=template_contribution)
+
+        print(contribution)
+        with open(comparison_file, 'r') as f:
+            comparison_input = json.load(f)
+            data_template = {
+                "title": comparison_input['title'],
+                "description": comparison_input['description'],
+                "research_fields": comparison_input['research_fields'],
+                "authors": comparison_input['authors'],
+                "references": [],
+                "contributions": contribution,
+                "observatories": comparison_input['observatories'],
+                "organizations": comparison_input['organizations'],
+                "is_anonymized": comparison_input['is_anonymized'],
+                "extraction_method": comparison_input['extraction_method']
+
+            }
+
+        with open(comparison_file, 'w') as file:
+            json.dump(data_template, file)
+
+        data_template = json.dumps(data_template)
+        return data_template
+
+    def _create_comparison(self, token, comparison_file, paper_id, template_contribution):
+
         headers = {
             "Content-Type": "application/vnd.orkg.comparison.v2+json;charset=UTF-8",
             "Accept": "application/vnd.orkg.comparison.v2+json",
             "Authorization": "Bearer" + token
         }
         self.full_api = f'{self.api}/comparisons'
-
         try:
             # post the data
             response = requests.post(
-                self.full_api, headers=headers, data=load_data_comparison(comparison_file_input))
+                self.full_api, headers=headers, data=self._laod_comparison_form(
+                    token=token, comparison_file=comparison_file,
+                    paper_id=paper_id, template_contribution=template_contribution
+                )
+            )
             # check if comparison was created successfully
             if response.status_code == 201:
                 return {
@@ -272,15 +282,162 @@ class _ORKG:
         except ValueError as e:
             raise ValueError(e)
 
-    # def compare_contribution(self, contributions, comparison_id):
-    def compare_contribution(self, token, comparison_file_input):
+    def _compare_contribution(self, token, comparison_file, paper_id, template_contribution):
         """ 
             Comparison_input: it is file template that content data to post in order to create comparison like
             title, description, references, contributions.. etc
         """
 
-        # get contributions
-        # return a json object that contain input for the comparison
+        self.comparison = self._create_comparison(
+            token=token, comparison_file=comparison_file,
+            paper_id=paper_id,
+            template_contribution=template_contribution
+        )
+        datas = ''
+        with open(comparison_file, 'r') as f:
+
+            datas = json.load(f)
+
+        print(self.comparison)
+
+        print("======= STEP 1: generate comparison")
+        print("comparison_id generated: ", self.comparison['comparison_id'])
+        print("Contributions: ", datas['contributions'])
+
+        # data format when we use simcomp api got get contribution to compare
+        data_format = {
+            "thing_type": "COMPARISON",
+            "thing_key": self.comparison['comparison_id'],
+            "config": {
+                "contributions": datas['contributions'],
+                "predicates": [],
+                "type": "PATH",
+                "transpose": False
+            },
+            "data": {
+            }
+        }
+
+        headers = {
+            'Content-Type': 'application/json'
+        }
+        self.full_api = "https://incubating.orkg.org/simcomp/contribution/compare?"
+
+        try:
+
+            if len(datas['contributions']) >= 2:
+                i = 0
+                contrib = ""
+                # format contribution to appropriate form corresponding in simcomp api
+                for item in datas['contributions']:
+                    if i == 0:
+                        contrib += f"contributions={item}"
+                        i += 1
+                    else:
+                        contrib += f"&contributions={item}"
+                        i += 1
+                self.full_api = f"{self.full_api}{contrib}&type=PATH"
+                #  get contribution to comapare
+                response = requests.get(self.full_api, headers=headers)
+                # use json load to decote the byte binary response
+                response_decoded = json.loads(response.content)
+                # set data
+                data_format["data"]['contributions'] = response_decoded['payload']['comparison']['contributions']
+                data_format['data']['predicates'] = response_decoded['payload']['comparison']['predicates']
+                data_format['data']['data'] = response_decoded['payload']['comparison']['data']
+                # dumps de json data
+                json_data = json.dumps(data_format)
+
+                # store the data in a file
+                output_file = "test/data.json"
+                with open(output_file, "w") as file:
+                    json.dump(data_format, file)
+
+                return json_data
+            else:
+                raise ValueError(
+                    'Your must provide at least 2 contributions to compare')
+        except:
+            raise ValueError("error during the process")
+
+    def _create_dataframe_comparison(self, token, comparison_folder_path, paper_id, template_contribution):
+        list_file_comps = os.listdir(comparison_folder_path)
+        headers = {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            # "Authorization": "Bearer" + token
+        }
+        i = 1
+        for file in list_file_comps:
+            print("\n============== COMPARISON ", i, "===================")
+            if file.endswith("json"):
+
+                data = self._compare_contribution(
+                    token=token, comparison_file=f"{comparison_folder_path}/{file}",
+                    paper_id=paper_id, template_contribution=template_contribution
+                )
+                print(
+                    "======= STEP 2: Compare Contribution ============")
+
+                print(
+                    "======= STEP 3: Create dataFrame ============")
+                try:
+
+                    self.full_api = "https://incubating.orkg.org/simcomp/thing/"
+                    response = requests.post(
+                        self.full_api, data=data, headers=headers)
+                    if response.status_code == 201:
+                        i += 1
+                        print({
+                            "status": 201,
+                            "message": "Success",
+                            "content": response.content
+                        })
+
+                    else:
+                        print({
+                            "status": response.status_code,
+                            "content": response.content
+                        })
+                except ValueError as e:
+                    return ValueError(e)
+
+    def create_comparison(self, token, comparison_file_input):
+        headers = {
+            "Content-Type": "application/vnd.orkg.comparison.v2+json;charset=UTF-8",
+            "Accept": "application/vnd.orkg.comparison.v2+json",
+            "Authorization": "Bearer" + token
+        }
+
+        self.full_api = f'{self.api}/comparisons'
+        data = load_data_comparison(comparison_file_input)
+
+        try:
+            # post the data
+            response = requests.post(
+                self.full_api, headers=headers, data=data)
+            # check if comparison was created successfully
+            if response.status_code == 201:
+                return {
+                    "status": 201,
+                    "message": 'comparison created successfully',
+                    # location url/ split.("/")[-1] in order to get id
+                    "comparison_id": response.headers['Location'].split('/')[-1],
+                    "content": response.headers['Location']
+                }
+            else:
+                print({
+                    "status": response.status_code,
+                    "message": response.content
+                })
+        except ValueError as e:
+            raise ValueError(e)
+
+    def compare_contribution(self, token, comparison_file_input):
+        """ 
+            Comparison_input: it is file template that content data to post in order to create comparison like
+            title, description, references, contributions.. etc
+        """
         datas = ''
         with open(comparison_file_input, 'r') as f:
 

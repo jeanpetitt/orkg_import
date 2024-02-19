@@ -18,8 +18,15 @@ To run the project in local on your computer device, you have Three options:
 
 ### Use Docker to perform different tasks like create comparison, contribution and paper
 
-Actually we have two (02) dockerfiles to perfom contribution and comparison tasks.
-For more detail on how you can use docker to perform these tasks, navigate inside [README Docker](./tsotsa_orkg/README.md) and Follow the differents steps.
+With Docker we have 02 possibility to import comparison table in the orkg system.
+
+1. #### First Possibility
+
+Navigate inside of the [Dockerfile: possibilty 1](./README_Docker.md) For more informations
+
+1. #### Second Possibility
+
+Navigate inside of the [Dockerfiles: possibilty 2](./tsotsa_orkg/README.md) For more information
 
 ### Use python script
 

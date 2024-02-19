@@ -8,6 +8,8 @@ def argsparser():
     parser = argparse.ArgumentParser()
     parser.add_argument("--contribution", type=bool,
                         help="Create contributin", default=False)
+    parser.add_argument("--contribution_and_comparison", type=bool,
+                        help="Create contributin", default=False)
     parser.add_argument("--comparison", type=bool,
                         default=False, help="create comparison")
     parser.add_argument(
@@ -46,5 +48,15 @@ if __name__ == '__main__':
         args.contribution = False
         orkg.create_dataframe_comparison(
             token=token, comparison_folder_path=args.comparison_folder_path)
+    elif args.contribution_and_comparison == True:
+        args.contribution = False
+        args.comparison = False
+        orkg._create_dataframe_comparison(
+            token=token,
+            paper_id=args.paper_id,
+            comparison_folder_path=args.comparison_folder_path,
+            template_contribution=args.json_path_contribution
+        )
+
     else:
         print("No Process running")
