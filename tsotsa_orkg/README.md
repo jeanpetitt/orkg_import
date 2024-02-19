@@ -30,7 +30,7 @@ cd tsotsa_orkg
   
 - --json_path_contribution: Json template which help to create a contribution. see an example here [json template example](./data/contributions/full_json_template.json)
 
-- --comparison_folder_path: Folder that contain json form that help to create a comparison. see an example here [folder comparison form](./tsotsa_orkg/data/comparisons/)
+- --comparison_folder_path: Folder that contain json form that help to create a comparison. see an example here [folder comparison form](./data/comparisons/)
 
 To update the differents arguments you want to use navigate inside [Dockerfile comparison](./Dockerfile.comparison) or [Dockerfile contribution](./Dockerfile.contribution)
 
