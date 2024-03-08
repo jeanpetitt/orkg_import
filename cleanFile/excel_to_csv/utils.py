@@ -3,8 +3,8 @@ import csv
 import os
 
 
-def extract_sheet_in_excel_file(excel_path=f'{os.getcwd()}/cleanFile/excel_to_csv/source_excel'):
-    csv_path = f'{os.getcwd()}/cleanFile/excel_to_csv/source_csv'
+def extract_sheet_in_excel_file(excel_path=f'{os.getcwd()}/excel_to_csv/loss_function'):
+    csv_path = f'{os.getcwd()}/excel_to_csv/csv_loss'
     list_source_file = os.listdir(excel_path)
 
     for file in list_source_file:

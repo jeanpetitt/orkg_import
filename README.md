@@ -40,7 +40,7 @@ You can perform the same tasks above by using the python script. But before it l
   
   * --contribution: Specify that you want to perform contribtuion tasks. It is boolean arguments
   
-  * --api: specify which api you want to use
+  * --platform: specify which api you want to use
         - incubating
         - sandbox
         - orkg

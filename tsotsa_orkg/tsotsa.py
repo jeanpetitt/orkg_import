@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from load_data import load_data_contribution, load_data_comparison
+from load_data import load_data_comparison
 
 
 class _ORKG:
@@ -151,9 +151,17 @@ class _ORKG:
 
             # add values to property
             for props in item['properties']:
+                if isinstance(props['value'], float):
+                    data_type = 'xsd:decimal'
+                elif isinstance(props['value'], bool):
+                    data_type = 'xsd:boolean'
+                elif isinstance(props['value'], int):
+                    data_type = 'xsd:integer'
+                elif isinstance(props['value'], str):
+                    data_type = 'xsd:string'
                 data_template["literals"][f'#temp{i}'] = {
                     'label': props['value'],
-                    'data_type': 'xsd:decimal'
+                    'data_type': data_type
                 }
 
                 # add property to contribution

@@ -9,9 +9,9 @@ To write in ORKG system you should be login and to do it follow these steps:
 
 ## Contributions &&  Comparison
 
-### Navigate in the dockerfile folder
+### Arguments role
 
-### Arguments functions
+Navigate in the dockerfile File to update the following arguments:
 
 - --comparison: Specify that you want to perform comparsion tasks. It is boolean arguments
 - --contribution_and_camparison : Specify that you want to import directly the table in one step. boolean argument
@@ -39,5 +39,5 @@ docker build -f ./Dockerfile -t tsotsa_orkg .
 ```
 
 ```sh
-    docker run --rm -ti tsotsa_orkg
+docker run --rm -ti tsotsa_orkg
 ```

@@ -9,7 +9,7 @@ def argsparser():
     parser.add_argument("--contribution", type=bool,
                         help="Create contributin", default=False)
     parser.add_argument("--contribution_and_comparison", type=bool,
-                        help="Create contributin", default=False)
+                        help="Create contributin", default=True)
     parser.add_argument("--comparison", type=bool,
                         default=False, help="create comparison")
     parser.add_argument(
@@ -19,17 +19,17 @@ def argsparser():
     parser.add_argument(
         '--comparison_folder_path', type=str, help="Folder path that contain a list of json file form for the comparison")
     parser.add_argument(
-        '--api', type=str, help="api name")
+        '--platform', type=str, help="platform name")
     args = parser.parse_args()
     return args
 
 
 def set_api(args, orkg):
-    if args.api == "incubating":
+    if args.platform == "incubating":
         orkg.set_api("https://incubating.orkg.org/api")
-    elif args.api == "sandbox":
+    elif args.platform == "sandbox":
         orkg.set_api("https://sandbox.orkg.org/api")
-    elif args.api == "orkg":
+    elif args.platform == "orkg":
         orkg.set_api("https://orkg.org/api")
 
 
