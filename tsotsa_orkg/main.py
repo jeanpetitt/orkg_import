@@ -31,6 +31,8 @@ def set_api(args, orkg):
         orkg.set_api("https://sandbox.orkg.org/api")
     elif args.platform == "orkg":
         orkg.set_api("https://orkg.org/api")
+    else:
+        orkg.set_api("https://incubating.orkg.org/api")
 
 
 if __name__ == '__main__':

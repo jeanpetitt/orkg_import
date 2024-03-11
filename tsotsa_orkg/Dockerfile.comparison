@@ -11,4 +11,4 @@ RUN pip install -r requirements.txt
 
 # RUN pip install -r tsotsa/requirements.txt
 
-CMD ["python", "main.py", "--api", "incubating", "--comparison", "true", "--comparison_folder_path", "data/comparisons"]
+CMD ["python", "main.py", "--platform", "incubating", "--comparison", "true", "--comparison_folder_path", "data/comparisons"]

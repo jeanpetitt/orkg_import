@@ -17,8 +17,8 @@ Navigate in the dockerfile File to update the following arguments:
 - --contribution_and_camparison : Specify that you want to import directly the table in one step. boolean argument
 - --contribution: Specify that you want to perform contribtuion tasks. It is boolean arguments
   
-- --api: specify which api you want to use
-  - incubating
+- --platform: specify which api you want to use
+  - incubating: it is set by default
   - sandbox
   - orkg
   

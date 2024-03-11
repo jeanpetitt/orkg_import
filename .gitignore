@@ -10,3 +10,4 @@ orkg_import
 data_*
 csv_loss
 loss_function
+cleanFile
