@@ -44,10 +44,12 @@ if __name__ == '__main__':
 
     if args.contribution == True:
         args.comparison = False
+        args.contribution_and_comparison = False
         orkg.create_contribution(
             paper_id=args.paper_id, token=token, json_template=args.json_path_contribution)
     elif args.comparison == True:
         args.contribution = False
+        args.contribution_and_comparison = False
         orkg.create_dataframe_comparison(
             token=token, comparison_folder_path=args.comparison_folder_path)
     elif args.contribution_and_comparison == True:

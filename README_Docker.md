@@ -4,6 +4,12 @@
 
 To write in ORKG system you should be login and to do it follow these steps:
 
+- navigate in the tsosa_orkg folder
+  
+```bash
+  cd tsotsa_orkg
+```
+
 - Create a .env file
 - At the end paste this line inside TOKEN="Your_ORKG_Token"
 

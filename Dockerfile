@@ -16,6 +16,7 @@ RUN pip install -r requirements.txt
 CMD ["python", "main.py", \
     "--platform","incubating", \
     "--paper_id","R1198107", \
+    "--contribution_and_comparison", "false", \
     "--json_path_contribution", "data/contributions/spec_json_template.json", \
     "--comparison_folder_path","data/comparisons"\
     ]
