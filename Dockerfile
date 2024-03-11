@@ -4,8 +4,8 @@ FROM python:3.9-slim
 WORKDIR /workspace
 
 # installation of dependancies
-COPY /tsotsa_orkg /workspace
-RUN pip install -r requirements.txt
+COPY . /workspace
+RUN pip install -r tsotsa_orkg/requirements.txt
 
 # Define environments variable for CMD parameters
 # ENV PLATFORM="incubating"
@@ -13,10 +13,9 @@ RUN pip install -r requirements.txt
 # ENV JSON_PATH_CONTRIBUTION="data/contributions/spec_json_template.json"
 # ENV COMPARISON_FOLDER_PATH="data/comparisons"
 
-CMD ["python", "main.py", \
+CMD ["python", "tsotsa_orkg/main.py", \
     "--platform","incubating", \
     "--paper_id","R1198107", \
-    "--contribution_and_comparison", "false", \
-    "--json_path_contribution", "data/contributions/spec_json_template.json", \
-    "--comparison_folder_path","data/comparisons"\
+    "--json_path_contribution", "tsotsa_orkg/data/contributions/spec_json_template.json", \
+    "--comparison_folder_path","tsotsa_orkg/data/comparisons"\
     ]
