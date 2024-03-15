@@ -16,6 +16,5 @@ RUN pip install -r tsotsa_orkg/requirements.txt
 CMD ["python", "tsotsa_orkg/main.py", \
     "--platform","incubating", \
     "--paper_id","R1198107", \
-    "--json_path_contribution", "tsotsa_orkg/data/contributions/spec_json_template.json", \
-    "--comparison_folder_path","tsotsa_orkg/data/comparisons"\
-    ]
+    "--table_json_folder_path", \
+    "--comparison_folder_path","tsotsa_orkg/data/contributions/test"]

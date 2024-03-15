@@ -1,9 +1,10 @@
 {
     "name": "KNSR3854_1",
     "paper": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+    "paper_id": "R1198107",
     "table": [
         {
-            "contribution_label": "Keleng Keleng",
+            "contribution_label": "Mbongo",
             "numberRecipes": 16,
             "properties": [
                 {
@@ -189,7 +190,7 @@
             ]
         },
         {
-            "contribution_label": "Meat stew",
+            "contribution_label": "Eru",
             "numberRecipes": 14,
             "properties": [
                 {
@@ -374,5 +375,22 @@
                 }
             ]
         }
-    ]
+    ],
+    "title_comp": "Comparison demo  test 6",
+    "description_comp": "comparison demo test 6",
+    "research_fields": [],
+    "authors": [
+        {
+            "id": null,
+            "name": "Azanzi Jiomekong",
+            "identifiers": null,
+            "homepage": null
+        }
+    ],
+    "references": [],
+    "contributions": [],
+    "observatories": [],
+    "organizations": [],
+    "is_anonymized": false,
+    "extraction_method": "UNKNOWN"
 }

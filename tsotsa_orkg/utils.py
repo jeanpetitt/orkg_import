@@ -121,7 +121,7 @@ class _ORKG:
         except ValueError as e:
             return e
 
-    def _load_data_contribution(self, data_json):
+    def _load_data_contribution(self, json_table_path):
         contribution = []
         # contribution template
         data_template = {
@@ -143,7 +143,7 @@ class _ORKG:
             }
         }
 
-        for item in data_json['table']:
+        for item in json_table_path['table']:
             i = 1
             # add name food as a contribution
             contribution_label = item['contribution_label']
@@ -180,7 +180,7 @@ class _ORKG:
 
     # create contribution
 
-    def create_contribution(self, paper_id, token, json_template):
+    def create_contribution(self, paper_id, token, json_table_path):
         """ 
             token: use to identify the users who make an write operation in orkg
             json_template: content the data to make a contribution
@@ -196,10 +196,10 @@ class _ORKG:
 
         self.full_api = f"{self.api}/papers/{paper_id}/contributions"
         try:
-            with open(json_template, 'r') as f:
-                data_app = json.load(f)
+            with open(json_table_path, 'r') as f:
+                json_table = json.load(f)
                 # get all data contribution in the loader of the data
-                for data in self._load_data_contribution(data_json=data_app):
+                for data in self._load_data_contribution(json_table_path=json_table):
                     # make the post request in order to create  the contribution(s) of the paper
                     response = requests.post(
                         self.full_api, data=data, headers=headers)
@@ -230,16 +230,16 @@ class _ORKG:
     
     """
 
-    def _laod_comparison_form(self, token, comparison_file, paper_id, template_contribution):
+    def _laod_comparison_form(self, token, json_table_path, paper_id):
         contribution = self.create_contribution(
-            paper_id=paper_id, token=token, json_template=template_contribution)
+            paper_id=paper_id, token=token, json_table_path=json_table_path)
 
         print(contribution)
-        with open(comparison_file, 'r') as f:
+        with open(json_table_path, 'r') as f:
             comparison_input = json.load(f)
             data_template = {
-                "title": comparison_input['title'],
-                "description": comparison_input['description'],
+                "title": comparison_input['title_comp'],
+                "description": comparison_input['description_comp'],
                 "research_fields": comparison_input['research_fields'],
                 "authors": comparison_input['authors'],
                 "references": [],
@@ -251,13 +251,13 @@ class _ORKG:
 
             }
 
-        with open(comparison_file, 'w') as file:
+        with open("data/comparisons/template.json", 'w') as file:
             json.dump(data_template, file)
 
         data_template = json.dumps(data_template)
         return data_template
 
-    def _create_comparison(self, token, comparison_file, paper_id, template_contribution):
+    def _create_comparison(self, token, paper_id, json_table_path):
 
         headers = {
             "Content-Type": "application/vnd.orkg.comparison.v2+json;charset=UTF-8",
@@ -269,8 +269,9 @@ class _ORKG:
             # post the data
             response = requests.post(
                 self.full_api, headers=headers, data=self._laod_comparison_form(
-                    token=token, comparison_file=comparison_file,
-                    paper_id=paper_id, template_contribution=template_contribution
+                    token=token,
+                    paper_id=paper_id,
+                    json_table_path=json_table_path
                 )
             )
             # check if comparison was created successfully
@@ -290,20 +291,19 @@ class _ORKG:
         except ValueError as e:
             raise ValueError(e)
 
-    def _compare_contribution(self, token, comparison_file, paper_id, template_contribution):
+    def _compare_contribution(self, token, json_table_path, paper_id):
         """ 
             Comparison_input: it is file template that content data to post in order to create comparison like
             title, description, references, contributions.. etc
         """
 
         self.comparison = self._create_comparison(
-            token=token, comparison_file=comparison_file,
+            token=token,
             paper_id=paper_id,
-            template_contribution=template_contribution
+            json_table_path=json_table_path
         )
-        datas = ''
-        with open(comparison_file, 'r') as f:
-
+        datas = {}
+        with open("data/comparisons/template.json", 'r') as f:
             datas = json.load(f)
 
         print(self.comparison)
@@ -368,8 +368,8 @@ class _ORKG:
         except:
             raise ValueError("error during the process")
 
-    def _create_dataframe_comparison(self, token, comparison_folder_path, paper_id, template_contribution):
-        list_file_comps = os.listdir(comparison_folder_path)
+    def _create_dataframe_comparison(self, token, paper_id, table_json_folder_path):
+        list_file_comps = os.listdir(table_json_folder_path)
         headers = {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
@@ -381,8 +381,9 @@ class _ORKG:
             if file.endswith("json"):
 
                 data = self._compare_contribution(
-                    token=token, comparison_file=f"{comparison_folder_path}/{file}",
-                    paper_id=paper_id, template_contribution=template_contribution
+                    token=token,
+                    paper_id=paper_id,
+                    json_table_path=f"{table_json_folder_path}/{file}"
                 )
                 print(
                     "======= STEP 2: Compare Contribution ============")

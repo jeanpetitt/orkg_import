@@ -1,4 +1,4 @@
-from tsotsa import _ORKG
+from utils import _ORKG
 import argparse
 from dotenv import load_dotenv
 import os
@@ -17,7 +17,7 @@ def argsparser():
     parser.add_argument(
         '--paper_id', type=str, help="ORKG paper id")
     parser.add_argument(
-        '--comparison_folder_path', type=str, help="Folder path that contain a list of json file form for the comparison")
+        '--table_json_folder_path', type=str, help="Folder path that contain a list of json file form for the comparison")
     parser.add_argument(
         '--platform', type=str, help="platform name")
     args = parser.parse_args()
@@ -58,8 +58,7 @@ if __name__ == '__main__':
         orkg._create_dataframe_comparison(
             token=token,
             paper_id=args.paper_id,
-            comparison_folder_path=args.comparison_folder_path,
-            template_contribution=args.json_path_contribution
+            table_json_folder_path=args.table_json_folder_path,
         )
 
     else:
