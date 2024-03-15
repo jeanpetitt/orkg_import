@@ -1,0 +1,19 @@
+{
+    "title": "Comparison demo  test 2",
+    "description": "comparison demo test 2",
+    "research_fields": [],
+    "authors": [
+        {
+            "id": null,
+            "name": "Azanzi Jiomekong",
+            "identifiers": null,
+            "homepage": null
+        }
+    ],
+    "references": [],
+    "contributions": [],
+    "observatories": [],
+    "organizations": [],
+    "is_anonymized": false,
+    "extraction_method": "UNKNOWN"
+}
