@@ -7,7 +7,6 @@ from load_data import load_data_comparison
 class _ORKG:
 
     def __init__(self):
-
         self.paper = {}
         self.contribution = {}
         self.comparison = {}
