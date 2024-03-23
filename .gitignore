@@ -1,13 +1,9 @@
 __pycache__
 .vscode
 test*.*
-dist
-tsotsa_orkg.egg-info
-fech_props*
-setup.py
 *.env
-orkg_import
 data_*
-csv_loss
-loss_function
 cleanFile
+template.json
+# virtual environment
+env

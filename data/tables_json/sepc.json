@@ -1,0 +1,552 @@
+{
+    "name": "KNSR3854_1",
+    "paper_name": "Nutritional composition of commonly consumed composite dishes from the Central Province of Cameroon",
+    "paper_id": "R1212701",
+    "table": [
+        {
+            "contribution_label": "Mbongo",
+            "numberRecipes": 16,
+            "properties": [
+                {
+                    "name": "Energy",
+                    "value": 152,
+                    "unit": "Kcal",
+                    "property_id": "P107024"
+                },
+                {
+                    "name": "Energy",
+                    "value": 637,
+                    "unit": "KJ",
+                    "property_id": "P107024"
+                },
+                {
+                    "name": "Water",
+                    "value": 78.7,
+                    "unit": "g",
+                    "property_id": "P107025"
+                },
+                {
+                    "name": "Protein",
+                    "value": 5.7,
+                    "unit": "g",
+                    "property_id": "P107026"
+                },
+                {
+                    "name": "Carbohydrates",
+                    "value": 3.2,
+                    "unit": "g",
+                    "property_id": "P107027"
+                },
+                {
+                    "name": "Fat",
+                    "value": 13.9,
+                    "unit": "g",
+                    "property_id": "P107028"
+                },
+                {
+                    "name": "Saturated Fat",
+                    "value": 4.7,
+                    "unit": "g",
+                    "property_id": "P107029"
+                },
+                {
+                    "name": "Monounsaturated Fat",
+                    "value": 5.8,
+                    "unit": "g",
+                    "property_id": "P107030"
+                },
+                {
+                    "name": "Polyunsaturated Fat",
+                    "value": 2.7,
+                    "unit": "g",
+                    "property_id": "P107031"
+                },
+                {
+                    "name": "Omega-3 fatty acid",
+                    "value": 0,
+                    "unit": "g",
+                    "property_id": "P107032"
+                },
+                {
+                    "name": "Omega-6 fatty acid",
+                    "value": 2.5,
+                    "unit": "g",
+                    "property_id": "P107033"
+                },
+                {
+                    "name": "Cholesterol",
+                    "value": 0.2,
+                    "unit": "mg",
+                    "property_id": "P107034"
+                },
+                {
+                    "name": "Total dietary fiber",
+                    "value": 1.4,
+                    "unit": "g",
+                    "property_id": "P107035"
+                },
+                {
+                    "name": "Thiamin",
+                    "value": 0.1,
+                    "unit": "mg",
+                    "property_id": "P107036"
+                },
+                {
+                    "name": "Riboflavin",
+                    "value": 0.1,
+                    "unit": "mg",
+                    "property_id": "P107037"
+                },
+                {
+                    "name": "Niacin",
+                    "value": 1.6,
+                    "unit": "mg",
+                    "property_id": "P107038"
+                },
+                {
+                    "name": "Vitamin B-6",
+                    "value": 0.1,
+                    "unit": "mg",
+                    "property_id": "P107039"
+                },
+                {
+                    "name": "Total folate",
+                    "value": 59.4,
+                    "unit": "µg",
+                    "property_id": "P107040"
+                },
+                {
+                    "name": "Vitamin C",
+                    "value": 12.8,
+                    "unit": "mg",
+                    "property_id": "P107041"
+                },
+                {
+                    "name": "Vitamin A (retinol equivalent)",
+                    "value": 73.1,
+                    "unit": "µg",
+                    "property_id": "P107042"
+                },
+                {
+                    "name": "Vitamin K ",
+                    "value": 195,
+                    "unit": "µg",
+                    "property_id": "P107043"
+                },
+                {
+                    "name": "Calcium",
+                    "value": 60.4,
+                    "unit": "mg",
+                    "property_id": "P107044"
+                },
+                {
+                    "name": "Iron",
+                    "value": 1.1,
+                    "unit": "mg",
+                    "property_id": "P107045"
+                },
+                {
+                    "name": "Zinc",
+                    "value": 0.6,
+                    "unit": "mg",
+                    "property_id": "P107046"
+                },
+                {
+                    "name": "Magnesium",
+                    "value": 39.5,
+                    "unit": "mg",
+                    "property_id": "P107047"
+                },
+                {
+                    "name": "Manganese",
+                    "value": 0.5,
+                    "unit": "mg",
+                    "property_id": "P107048"
+                },
+                {
+                    "name": "Selenium",
+                    "value": 1.2,
+                    "unit": "µg",
+                    "property_id": "P107049"
+                },
+                {
+                    "name": "Phosphorus",
+                    "value": 88.2,
+                    "unit": "mg",
+                    "property_id": "P107050"
+                },
+                {
+                    "name": "Potassium",
+                    "value": 298,
+                    "unit": "mg",
+                    "property_id": "P107051"
+                },
+                {
+                    "name": "Sodium",
+                    "value": 32.6,
+                    "unit": "mg",
+                    "property_id": "P107052"
+                }
+            ]
+        },
+        {
+            "contribution_label": "Eru",
+            "numberRecipes": 14,
+            "properties": [
+                {
+                    "name": "Energy",
+                    "value": 186,
+                    "unit": "Kcal",
+                    "property_id": "P107024"
+                },
+                {
+                    "name": "Energy",
+                    "value": 780,
+                    "unit": "KJ",
+                    "property_id": "P107024"
+                },
+                {
+                    "name": "Water",
+                    "value": 76.8,
+                    "unit": "g",
+                    "property_id": "P107025"
+                },
+                {
+                    "name": "Protein",
+                    "value": 1.1,
+                    "unit": "g",
+                    "property_id": "P107026"
+                },
+                {
+                    "name": "Carbohydrates",
+                    "value": 1.7,
+                    "unit": "g",
+                    "property_id": "P107027"
+                },
+                {
+                    "name": "Fat",
+                    "value": 20,
+                    "unit": "g",
+                    "property_id": "P107028"
+                },
+                {
+                    "name": "Saturated Fat",
+                    "value": 9.3,
+                    "unit": "g",
+                    "property_id": "P107029"
+                },
+                {
+                    "name": "Monounsaturated Fat",
+                    "value": 7.6,
+                    "unit": "g",
+                    "property_id": "P107030"
+                },
+                {
+                    "name": "Polyunsaturated Fat",
+                    "value": 2.3,
+                    "unit": "g",
+                    "property_id": "P107031"
+                },
+                {
+                    "name": "Omega-3 fatty acid",
+                    "value": 0,
+                    "unit": "g",
+                    "property_id": "P107032"
+                },
+                {
+                    "name": "Omega-6 fatty acid",
+                    "value": 2.2,
+                    "unit": "g",
+                    "property_id": "P107033"
+                },
+                {
+                    "name": "Cholesterol",
+                    "value": 0,
+                    "unit": "mg",
+                    "property_id": "P107034"
+                },
+                {
+                    "name": "Total dietary fiber",
+                    "value": 0.7,
+                    "unit": "g",
+                    "property_id": "P107035"
+                },
+                {
+                    "name": "Thiamin",
+                    "value": 0,
+                    "unit": "mg",
+                    "property_id": "P107036"
+                },
+                {
+                    "name": "Riboflavin",
+                    "value": 0,
+                    "unit": "mg",
+                    "property_id": "P107037"
+                },
+                {
+                    "name": "Niacin",
+                    "value": 0.5,
+                    "unit": "mg",
+                    "property_id": "P107038"
+                },
+                {
+                    "name": "Vitamin B-6",
+                    "value": 0,
+                    "unit": "mg",
+                    "property_id": "P107039"
+                },
+                {
+                    "name": "Total folate",
+                    "value": 13.3,
+                    "unit": "µg",
+                    "property_id": "P107040"
+                },
+                {
+                    "name": "Vitamin C",
+                    "value": 3,
+                    "unit": "mg",
+                    "property_id": "P107041"
+                },
+                {
+                    "name": "Vitamin A (retinol equivalent)",
+                    "value": 0.7,
+                    "unit": "µg",
+                    "property_id": "P107042"
+                },
+                {
+                    "name": "Vitamin K ",
+                    "value": 3.7,
+                    "unit": "µg",
+                    "property_id": "P107043"
+                },
+                {
+                    "name": "Calcium",
+                    "value": 7.2,
+                    "unit": "mg",
+                    "property_id": "P107044"
+                },
+                {
+                    "name": "Iron",
+                    "value": 0.2,
+                    "unit": "mg",
+                    "property_id": "P107045"
+                },
+                {
+                    "name": "Zinc",
+                    "value": 0.2,
+                    "unit": "mg",
+                    "property_id": "P107046"
+                },
+                {
+                    "name": "Magnesium",
+                    "value": 9.3,
+                    "unit": "mg",
+                    "property_id": "P107047"
+                },
+                {
+                    "name": "Manganese",
+                    "value": 0.1,
+                    "unit": "mg",
+                    "property_id": "P107048"
+                },
+                {
+                    "name": "Selenium",
+                    "value": 0.3,
+                    "unit": "µg",
+                    "property_id": "P107049"
+                },
+                {
+                    "name": "Phosphorus",
+                    "value": 18.4,
+                    "unit": "mg",
+                    "property_id": "P107050"
+                },
+                {
+                    "name": "Potassium",
+                    "value": 70,
+                    "unit": "mg",
+                    "property_id": "P107051"
+                },
+                {
+                    "name": "Sodium",
+                    "value": 4.3,
+                    "unit": "mg",
+                    "property_id": "P107052"
+                }
+            ]
+        },
+        {
+            "contribution_label": "Unit",
+            "numberRecipes": 14,
+            "properties": [
+                {
+                    "name": "Energy",
+                    "value": "Kcal",
+                    "property_id": "P107024"
+                },
+                {
+                    "name": "Energy",
+                    "value": "KJ",
+                    "property_id": "P107024"
+                },
+                {
+                    "name": "Water",
+                    "value": "g",
+                    "property_id": "P107025"
+                },
+                {
+                    "name": "Protein",
+                    "value": "g",
+                    "property_id": "P107026"
+                },
+                {
+                    "name": "Carbohydrates",
+                    "value": "g",
+                    "property_id": "P107027"
+                },
+                {
+                    "name": "Fat",
+                    "value": "g",
+                    "property_id": "P107028"
+                },
+                {
+                    "name": "Saturated Fat",
+                    "value": "g",
+                    "property_id": "P107029"
+                },
+                {
+                    "name": "Monounsaturated Fat",
+                    "value": "g",
+                    "property_id": "P107030"
+                },
+                {
+                    "name": "Polyunsaturated Fat",
+                    "value": "g",
+                    "property_id": "P107031"
+                },
+                {
+                    "name": "Omega-3 fatty acid",
+                    "value": "g",
+                    "property_id": "P107032"
+                },
+                {
+                    "name": "Omega-6 fatty acid",
+                    "value": "g",
+                    "property_id": "P107033"
+                },
+                {
+                    "name": "Cholesterol",
+                    "value": "mg",
+                    "property_id": "P107034"
+                },
+                {
+                    "name": "Total dietary fiber",
+                    "value": "g",
+                    "property_id": "P107035"
+                },
+                {
+                    "name": "Thiamin",
+                    "value": "mg",
+                    "property_id": "P107036"
+                },
+                {
+                    "name": "Riboflavin",
+                    "value": "mg",
+                    "property_id": "P107037"
+                },
+                {
+                    "name": "Niacin",
+                    "value": "mg",
+                    "property_id": "P107038"
+                },
+                {
+                    "name": "Vitamin B-6",
+                    "value": "mg",
+                    "property_id": "P107039"
+                },
+                {
+                    "name": "Total folate",
+                    "value": "µg",
+                    "property_id": "P107040"
+                },
+                {
+                    "name": "Vitamin C",
+                    "value": "mg",
+                    "property_id": "P107041"
+                },
+                {
+                    "name": "Vitamin A (retinol equivalent)",
+                    "value": "µg",
+                    "property_id": "P107042"
+                },
+                {
+                    "name": "Vitamin K ",
+                    "value": "µg",
+                    "property_id": "P107043"
+                },
+                {
+                    "name": "Calcium",
+                    "value": "mg",
+                    "property_id": "P107044"
+                },
+                {
+                    "name": "Iron",
+                    "value": "mg",
+                    "property_id": "P107045"
+                },
+                {
+                    "name": "Zinc",
+                    "value": "mg",
+                    "property_id": "P107046"
+                },
+                {
+                    "name": "Magnesium",
+                    "value": "mg",
+                    "property_id": "P107047"
+                },
+                {
+                    "name": "Manganese",
+                    "value": "mg",
+                    "property_id": "P107048"
+                },
+                {
+                    "name": "Selenium",
+                    "value": "µg",
+                    "property_id": "P107049"
+                },
+                {
+                    "name": "Phosphorus",
+                    "value": "mg",
+                    "property_id": "P107050"
+                },
+                {
+                    "name": "Potassium",
+                    "value": "mg",
+                    "property_id": "P107051"
+                },
+                {
+                    "name": "Sodium",
+                    "value": "mg",
+                    "property_id": "P107052"
+                }
+            ]
+        }
+    ],
+    "title_comp": "Comparison demo  test 6",
+    "description_comp": "comparison demo test 6",
+    "research_fields": [],
+    "authors": [
+        {
+            "id": null,
+            "name": "Azanzi Jiomekong",
+            "identifiers": null,
+            "homepage": null
+        }
+    ],
+    "references": [],
+    "contributions": [],
+    "observatories": [],
+    "organizations": [],
+    "is_anonymized": false,
+    "extraction_method": "UNKNOWN"
+}

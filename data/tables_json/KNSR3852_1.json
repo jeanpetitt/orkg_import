@@ -55,7 +55,7 @@
                     "property_id": "P130000"
                 },
                 {
-                    "value": "Fiber",
+                    "Fiber": "Fiber",
                     "property_id": "P130000"
                 },
                 {
@@ -170,7 +170,7 @@
                     "property_id": "P130000"
                 },
                 {
-                    "value": "Threonin",
+                    "value": "Tryptophan",
                     "property_id": "P130000"
                 },
                 {
@@ -183,7 +183,7 @@
                 },
                 {
                     "value": "Lysine",
-                    "property_id": "P130000"
+                    "property_id": "P107027"
                 },
                 {
                     "value": "Valine",
@@ -217,8 +217,8 @@
         }
 
     ],
-    "title_comp": "Comparison demo  1",
-    "description_comp": "comparison demo 1",
+    "title_comp": "Comparison demo  2",
+    "description_comp": "comparison demo test 2",
     "research_fields": [],
     "authors": [
         {

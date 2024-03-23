@@ -131,19 +131,14 @@ class _ORKG:
             "contribution": {
                 "label": "Contribution 1",
                 "statements": {
-                    "P107024": [{
-                        "id": "#temp1",
-                        # "statements": "null"
-                    }],
-                    "P107024": [{
-                        "id": "#temp1"
-                    }]
+
                 }
             }
         }
-
+        paper_id = json_table_path["paper_id"] if "paper_id" in json_table_path else \
+            ValueError("You must pass id of paper in the json template")
         for item in json_table_path['table']:
-            i = 1
+            i = 0
             # add name food as a contribution
             contribution_label = item['contribution_label']
             data_template["contribution"]['label'] = contribution_label
@@ -163,10 +158,26 @@ class _ORKG:
                     'data_type': data_type
                 }
 
-                # add property to contribution
-                data_template["contribution"]["statements"][f"{props['property_id']}"] = [{
-                    "id": f"#temp{i}"
-                }]
+                # add property and litteral to contribution
+                if i == 0:
+                    data_template["contribution"]["statements"][f"{props['property_id']}"] = [{
+                        "id": f"#temp{i}",
+                        "statements": None
+                    }]
+                elif i > 0:
+                    # Check if we have the multi litteral for a given property
+                    if item['properties'][i]['property_id'] == item['properties'][i-1]['property_id']:
+                        data_template["contribution"]["statements"][f"{props['property_id']}"].append(
+                            {
+                                "id": f"#temp{i}",
+                                "statements": None
+                            }
+                        )
+                    else:
+                        data_template["contribution"]["statements"][f"{props['property_id']}"] = [{
+                            "id": f"#temp{i}",
+                            "statements": None
+                        }]
                 i += 1
             # json serialize
             json_data = json.dumps(data_template)
@@ -175,11 +186,11 @@ class _ORKG:
             with open(output_file, "w") as file:
                 json.dump(data_template, file)
 
-        return contribution
+        return paper_id, contribution
 
     # create contribution
 
-    def create_contribution(self, paper_id, token, json_table_path):
+    def create_contribution(self, token, json_table_path):
         """ 
             token: use to identify the users who make an write operation in orkg
             json_template: content the data to make a contribution
@@ -190,16 +201,15 @@ class _ORKG:
             "Accept": "application/vnd.orkg.contribution.v2+json",
             "Authorization": "Bearer" + token
         }
-
-        contribution = []
-
-        self.full_api = f"{self.api}/papers/{paper_id}/contributions"
+        result = []
         try:
             with open(json_table_path, 'r') as f:
                 json_table = json.load(f)
+                paper_id, contribution_datas = self._load_data_contribution(json_table_path=json_table)
+                self.full_api = f"{self.api}/papers/{paper_id}/contributions"
                 # get all data contribution in the loader of the data
-                for data in self._load_data_contribution(json_table_path=json_table):
-                    # make the post request in order to create  the contribution(s) of the paper
+                for data in contribution_datas:
+                    # make the post request in order to create  the contribution(s) of the paper         
                     response = requests.post(
                         self.full_api, data=data, headers=headers)
 
@@ -210,14 +220,14 @@ class _ORKG:
                             'content': response.headers['Location']
                         })
 
-                        contribution.append(
+                        result.append(
                             response.headers['Location'].split("/")[-1])
                     else:
                         print({
                             'status code': response.status_code,
                             'message': response.content
                         })
-            return contribution
+            return result
         except ValueError as e:
             print(e)
 
@@ -229,9 +239,11 @@ class _ORKG:
     
     """
 
-    def _laod_comparison_form(self, token, json_table_path, paper_id):
+    def _laod_comparison_form(self, token, json_table_path):
         contribution = self.create_contribution(
-            paper_id=paper_id, token=token, json_table_path=json_table_path)
+            token=token, 
+            json_table_path=json_table_path
+        )
 
         print(contribution)
         with open(json_table_path, 'r') as f:
@@ -250,13 +262,13 @@ class _ORKG:
 
             }
 
-        with open("data/comparisons/template.json", 'w') as file:
+        with open("template.json", 'w') as file:
             json.dump(data_template, file)
 
         data_template = json.dumps(data_template)
         return data_template
 
-    def _create_comparison(self, token, paper_id, json_table_path):
+    def _create_comparison(self, token, json_table_path):
 
         headers = {
             "Content-Type": "application/vnd.orkg.comparison.v2+json;charset=UTF-8",
@@ -269,7 +281,6 @@ class _ORKG:
             response = requests.post(
                 self.full_api, headers=headers, data=self._laod_comparison_form(
                     token=token,
-                    paper_id=paper_id,
                     json_table_path=json_table_path
                 )
             )
@@ -290,7 +301,7 @@ class _ORKG:
         except ValueError as e:
             raise ValueError(e)
 
-    def _compare_contribution(self, token, json_table_path, paper_id):
+    def _compare_contribution(self, token, json_table_path):
         """ 
             Comparison_input: it is file template that content data to post in order to create comparison like
             title, description, references, contributions.. etc
@@ -298,11 +309,10 @@ class _ORKG:
 
         self.comparison = self._create_comparison(
             token=token,
-            paper_id=paper_id,
             json_table_path=json_table_path
         )
         datas = {}
-        with open("data/comparisons/template.json", 'r') as f:
+        with open("template.json", 'r') as f:
             datas = json.load(f)
 
         print(self.comparison)
@@ -367,48 +377,52 @@ class _ORKG:
         except:
             raise ValueError("error during the process")
 
-    def _create_dataframe_comparison(self, token, paper_id, table_json_folder_path):
-        list_file_comps = os.listdir(table_json_folder_path)
-        headers = {
+    def _create_dataframe_comparison(self, token, table_json_folder_path):
+        if os.path.isdir(table_json_folder_path):
+            list_file_comps = os.listdir(table_json_folder_path)
+            headers = {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
             # "Authorization": "Bearer" + token
         }
-        i = 1
-        for file in list_file_comps:
-            print("\n============== COMPARISON ", i, "===================")
-            if file.endswith("json"):
+            i = 1
+            for file in list_file_comps:
+                print("\n============== COMPARISON ", i, "===================")
+                if file.endswith("json"):
 
-                data = self._compare_contribution(
-                    token=token,
-                    paper_id=paper_id,
-                    json_table_path=f"{table_json_folder_path}/{file}"
-                )
-                print(
-                    "======= STEP 2: Compare Contribution ============")
+                    data = self._compare_contribution(
+                        token=token,
+                        json_table_path=f"{table_json_folder_path}/{file}"
+                    )
+                    print(
+                        "======= STEP 2: Compare Contribution ============")
 
-                print(
-                    "======= STEP 3: Create dataFrame ============")
-                try:
+                    print(
+                        "======= STEP 3: Create dataFrame ============")
+                    try:
 
-                    self.full_api = "https://incubating.orkg.org/simcomp/thing/"
-                    response = requests.post(
-                        self.full_api, data=data, headers=headers)
-                    if response.status_code == 201:
-                        i += 1
-                        print({
-                            "status": 201,
-                            "message": "Success",
-                            "content": response.content
-                        })
+                        self.full_api = "https://incubating.orkg.org/simcomp/thing/"
+                        response = requests.post(
+                            self.full_api, data=data, headers=headers)
+                        if response.status_code == 201:
+                            i += 1
+                            print({
+                                "status": 201,
+                                "message": "Success",
+                                "content": response.content
+                            })
 
-                    else:
-                        print({
-                            "status": response.status_code,
-                            "content": response.content
-                        })
-                except ValueError as e:
-                    return ValueError(e)
+                        else:
+                            print({
+                                "status": response.status_code,
+                                "content": response.content
+                            })
+                    except ValueError as e:
+                        return ValueError(e)
+        else:
+            print("The path specified is not  correct. your path can \
+                  be specified like this /home/user/desktop/folder")
+        
 
     def create_comparison(self, token, comparison_file_input):
         headers = {

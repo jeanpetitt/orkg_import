@@ -15,8 +15,6 @@ def argsparser():
     parser.add_argument(
         '--json_path_contribution', type=str, help="Json template which help to create a contribution")
     parser.add_argument(
-        '--paper_id', type=str, help="ORKG paper id")
-    parser.add_argument(
         '--table_json_folder_path', type=str, help="Folder path that contain a list of json file form for the comparison")
     parser.add_argument(
         '--platform', type=str, help="platform name")
@@ -38,6 +36,7 @@ def set_api(args, orkg):
 if __name__ == '__main__':
     load_dotenv()
     token = os.environ["TOKEN"]
+    table_json_folder_path = os.environ['TABLE_JSON_FOLDER_PATH']
     args = argsparser()
     orkg = _ORKG()
     set_api(args=args, orkg=orkg)
@@ -57,8 +56,7 @@ if __name__ == '__main__':
         args.comparison = False
         orkg._create_dataframe_comparison(
             token=token,
-            paper_id=args.paper_id,
-            table_json_folder_path=args.table_json_folder_path,
+            table_json_folder_path=table_json_folder_path,
         )
 
     else:
